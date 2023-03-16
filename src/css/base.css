@@ -18,9 +18,9 @@
 
     --animation-time: 250ms;
     --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
-  body {
+body {
     background-color: var(--primary-background-color);
     color: var(--primary-color-text);
     font-family: "Montserrat", sans-serif;
