@@ -1,0 +1,8 @@
+@media screen and (min-width: 375px)
+{
+    .benefits-container
+    {
+        max-width: 375px;
+        padding: 20px;
+    }
+}
