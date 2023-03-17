@@ -14,6 +14,8 @@
     --secondary-background-color: #1E1823;
     --primary-color-text: #111111;
     --secondary-color-text: #FFFFFF;
+    --info-color-text: rgba(17, 17, 17, 0.7);
+    --swiper-dots: rgba(17, 17, 17, 0.1);
     --active-color: #FD9222;
 
     --animation-time: 250ms;
