@@ -39,6 +39,7 @@
   border-radius: 15px;
 }
 .our-product-img {
+  max-width: none;
   margin-bottom: 8px;
 }
 .our-product-item-title {
