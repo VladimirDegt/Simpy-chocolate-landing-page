@@ -1,0 +1,105 @@
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 19px;}
+.container {
+    width: 100%;
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;}
+.header>.container{
+    display: flex;
+align-items: center;}
+.header-navigation
+{display: flex;
+margin-right: auto;}
+.header-logo { align-items: center;}
+.heder-logo-icon {
+width: 169px;
+height: 21px;
+align-items: center;}
+.header-list{display: none;}
+.header-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;   
+    letter-spacing: -0.02em;
+    color: #111111;}
+.heder-social{display: none;}
+.heder-social-icon{
+stroke: black;}
+.burger-btn-open {
+margin-right: 4px;
+border: none;
+background-color: transparent;
+padding: 0;}
+.burger-btn-icon{
+stroke:#111111;
+padding: 0;
+width:21px;
+height: 14px;}
+
+@media screen and (min-width: 375px) {
+.container {max-width: 375px;}
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+.header {
+padding-top: 31px;
+padding-bottom: 31px;
+/* border-bottom: 1px solid #e1171a; */
+}
+.container { 
+max-width: 768px;
+padding-left: 32px;
+padding-right: 32px}
+.burger-btn-icon {
+stroke: #111111;
+width: 24px;
+height: 16px;}
+}
+
+
+@media screen and (min-width: 1200px) {
+
+.burger-btn-open{display: none;}   
+.header {
+ padding-top: 26px;
+padding-bottom: 34px;
+/* border-bottom: 1px solid #e1171a; */
+}
+.container {
+max-width: 1200px;
+padding-left: 32px;
+padding-right: 32px;}
+.header-logo {
+align-items: center;
+}
+.heder-logo-icon{
+width: 213px;
+height: 24px;
+align-items: center;
+}
+.header-list{
+display: flex;
+gap: 24px;
+margin-left: 190px;
+align-items: center;}
+.heder-social {
+display: flex;
+align-items: center;
+padding-top: 3px;}
+.heder-social-item{
+margin-right: 21px;
+align-items: center;}
+}
+
+    
