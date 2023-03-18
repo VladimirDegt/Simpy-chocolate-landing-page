@@ -73,7 +73,30 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
+.swiper-pagination {
+  text-align: center;
+}
+.pagination-btn {
+  margin-top: 20px;
 
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--swiper-dots);
+  margin-right: 13px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+.pagination-btn.active {
+  width: 28px;
+  border-radius: 10px;
+  background-color: var(--active-color);
+}
+.pagination-btn.last {
+  margin-right: 0;
+}
 @media screen and (max-width: 767px) {
 }
 @media screen and (min-width: 768px) {
