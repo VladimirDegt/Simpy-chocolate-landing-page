@@ -7,7 +7,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 32px;
-    padding-bottom: 14px;
+    padding-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,14 +23,16 @@
     line-height: 1.17;
     letter-spacing: -0.02em;
 }
-.footer-block {
+.footer-contact-block {
     display: flex;
     justify-content: space-between;
+    gap: 52px;
 }
 .footer-address {
     color: var(--secondary-color-text);
     font-family: inherit;
     font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
         
@@ -41,29 +43,23 @@
     margin-bottom: 14px;
 }
 
-.footer-address-list {}
-
-.list {}
-
-.footer-address-item {}
-
-.footer-address-link {
-    
-}
-
-.link {}
-
 .footer-soc-list {
     display:flex;
-   gap: 17px; 
-   flex-direction: row;
+    gap: 17px; 
+    flex-direction: row;
 }
 
-.footer-soc-item {}
 
-.footer-soc-link {}
-.footer-icon {
+.footer-icon-insta {
     stroke: var(--secondary-color-text);
+    width: 18px;
+    height: 18px;
+}
+
+.footer-icon-twit {
+    stroke: var(--secondary-color-text);
+    width: 20px;
+    height: 17px;
 }
 .footer-line {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -72,10 +68,9 @@
 }
 .footer-nav-block {
     display: block;
-     margin-top: 32px;
+    margin-top: 32px;
     }
-.footer-nav {
-    }
+
 
 .footer-nav-list {
     display: inline-block;
@@ -91,31 +86,75 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--secondary-color-text);
-    margin-bottom: 18px;
-
-}
-
-.footer-nav-link {
    
-
 }
+
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
 @media screen and (min-width: 375px) {
     .footer-container {
         max-width: 365px;
     }
 }
+
+/*-----------TABLET-----------------*/
+
 @media screen and (min-width: 768px) {
     .footer-container {
-        max-width: 733px;
+        max-width: 734px;
     }
 
+.footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 52px;
+    padding-bottom: 32px;
+}
+
+.footer-text-block {
+    display: flex;
+      
+}
 .footer-text {
-    
-    
+    font-size: 28px;
+    line-height: 1.21;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon-insta {
+    stroke: var(--secondary-color-text);
+    width: 20px;
+    height: 20px;
+}
+.footer-icon-twit {
+    stroke: var(--secondary-color-text);
+    width: 22px;
+    height: 18px;
 }
 
 
+.footer-nav-item {
+    display: inline-block;
+    margin-right: 24px;
+}
+.footer-line {
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+}
 
+/*-----------DESKTOP-----------------*/
 
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        max-width: 1166px;
+    }
+.footer-line {
+    margin-top: 58px;
+   }
 
 }
