@@ -16,7 +16,7 @@
       rgba(46, 47, 66, 0.2),
       rgba(46, 47, 66, 0.2)
     ),
-    url(/img/subscribe/subcribe-mobile.jpg);
+    url(/img/subscribe/subscribe-mobile.jpg);
   background-color: var(--secondary-background-color);
   background-position: center;
   background-size: cover;
@@ -34,7 +34,7 @@
         rgba(46, 47, 66, 0.2),
         rgba(46, 47, 66, 0.2)
       ),
-      url(/img/subscribe/subcribe-mobile@2x.jpg);
+      url(/img/subscribe/subscribe-mobile@2x.jpg);
   }
 }
 
@@ -108,7 +108,7 @@
         rgba(46, 47, 66, 0.2),
         rgba(46, 47, 66, 0.2)
       ),
-      url(/img/subscribe/subcribe-tablet.jpg);
+      url(/img/subscribe/subscribe-tablet.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -120,7 +120,7 @@
           rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)
         ),
-        url(/img/subscribe/subcribe-tablet@2x.jpg);
+        url(/img/subscribe/subscribe-tablet@2x.jpg);
     }
   }
   .content-wrapper {
@@ -152,7 +152,7 @@
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.2),
         rgba(46, 47, 66, 0.2)),
-      url(/img/subscribe/subcribe-desktop.jpg);
+      url(/img/subscribe/subscribe-desktop.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -162,7 +162,7 @@
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)),
-        url(/img/subscribe/subcribe-desktop@2x.jpg);
+        url(/img/subscribe/subscribe-desktop@2x.jpg);
     }
   }
 
