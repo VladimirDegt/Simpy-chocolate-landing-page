@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -25,13 +26,26 @@
   </head>
 
   <body>
-    <!-- ------------Oleg----------------- -->
-    <load ="partials/header.html" />
-    Hedear
+    <header>
+      <!-- тут пишем лоад для поключения хедера -->
+      <load ="partials/header.html" />
+    </header>
+
     <main>
-      <section>Первая секция/Hero</section>
+      <!-- тут пишем лоад для поключения каждой секции -->
+      <!-- соблюдайте их очередность -->
+      <load ="partials/our-products.html" />
+      <load ="partials/reviews.html" />
+      <load ="partials/subscribe.html" />
     </main>
-    <load src="partials/footer.html" />
+
+    <footer>
+      <!-- тут пишем лоад для поключения футера -->
+      <load ="partials/footer.html" />
+    </footer>
+
     <script type="module" src="/main.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
+
 </html>
