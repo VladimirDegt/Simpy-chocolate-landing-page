@@ -1,138 +1,67 @@
 <link rel="stylesheet" href="../css/top-sellers.css">
 <section class="top-sellers">
     <div class="container">
-        <h2><span class="top-sellers-title">TOP</span> SELLERS</h2>
-        <ul class="top-sellers-list">
-            <li class="top-sellers-item">
-                <picture>
-                    <source 
-                    srcset=""
-                    media="(min-width: 1200px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 768px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 375px)"
-                    />
-                    <img src="" alt="chocolate-nut" width="335">
-                </picture>
-            </li>
-            <p class="top-selle-text">
-                Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
-            <li class="top-sellers-item">
-                <picture>
-                    <source 
-                    srcset=""
-                    media="(min-width: 1200px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 768px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 375px)"
-                    />
-                    <img src="" alt="chocolate-nut" width="335">
-                </picture>
-            </li>
-            <li class="top-sellers-item hidden">
-                <picture>
-                    <source 
-                    srcset=""
-                    media="(min-width: 1200px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 768px)"
-                    />
-                    <source 
-                    srcset=""
-                    media="(min-width: 375px)"
-                    />
-                    <img src="" alt="chocolate-nut" width="335">
-                </picture>
-            </li>
-        </ul>
-        <button type="button" class="top-sellers-btn">Buy Now</button>
+        <h2 class="top-sellers-title"><span class="top-sellers-title-orange">TOP</span> SELLERS</h2>
+            <ul class="top-sellers-list">
+                <li class="top-sellers-item ">
+                        <div class="img-top">
+                            <picture>
+                                <source 
+                                srcset="/img/top-sellers/option-1-desktop.jpg 1x, /img//top-sellers/option-1-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                >
+                                <source 
+                                srcset="/img/top-sellers/option-1-tablet.jpg 1x, /img/top-sellers/option-1-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                >
+                                <source 
+                                srcset="/img/top-sellers/option-1-mobile.jpg 1x, /img/top-sellers/option-1-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                >
+                                <img src="/img/top-sellers/option-1-tablet.jpg" alt="chocolate beans">
+                            </picture>
+                        </div>
+                        <p class="top-sellers-text">
+                    Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+                        </p>
+                </li>
+                
+                <li class="top-sellers-item ">
+                        <div class="img-top">
+                            <picture>
+                                <source 
+                                srcset="/img/top-sellers/option-2-desktop.jpg 1x, /img//top-sellers/option-2-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                >
+                                <source 
+                                srcset="/img/top-sellers/option-2-tablet.jpg 1x, /img/top-sellers/option-2-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                >
+                                <source 
+                                srcset="/img/top-sellers/option-2-mobile.jpg 1x, /img/top-sellers/option-2-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                >
+                                <img src="/img/top-sellers/option-2-tablet.jpg" alt="chocolate beans">
+                            </picture>
+                        </div>
+                            <button type="button" class="top-sellers-btn" data-modal-open>Buy Now</button>
+                        
+                </li>
+                <li class="top-sellers-item hidden">
+                        <div class="img-top">
+                            <picture>
+                                <source 
+                                srcset="/img/top-sellers/option-3-desktop.jpg 1x, /img//top-sellers/option-3-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                >
+                                <source 
+                                srcset="/img/top-sellers/option-3-desktop.jpg 1x, /img//top-sellers/option-3-desktop@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                >
+                                <img src="/img/top-sellers/option-2-tablet.jpg" alt="chocolate beans">
+                            </picture>
+                        </div>
+                </li>
+            </ul>
     </div>
-
-<div class="backdrop is-hidden">
-        <div class="modal">
-                <button type="button" class="modal-close" data-modal-close>
-                    <svg class="modal-close-icon" width="12" height="12">
-                        <use href="./images/svg/sprite.svg#icon-modal-close"></use>
-                    </svg>
-                </button>
-                <form class="top-sellers-form">
-                    <b><span class="top-sellers-title-orange">Buy</span> Now</b>
-                    <div class="top-sellers-slider">
-                        <ul class="slider-list">
-                            <li class="slider-item">
-                                <div class="slider-wrap">
-                                    <img src="" alt=""></img>
-                                    <button type="submit">100 g</button>
-                                </div>
-                            </li>
-                            <li class="slider-item">
-                                <div class="slider-wrap">
-                                    <img src="" alt=""></img>
-                                    <button type="submit">200 g</button>
-                                </div>
-                            </li>
-                            <li class="slider-item">
-                                <div class="slider-wrap">
-                                    <img src="" alt=""></img>
-                                    <button type="submit">300 g</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="top-sellers-wrap">
-                    <label class="top-sellers-label">Personal information
-                    <input type="text" class="top-sellers-input" name="name" placeholder="Name">
-                    </label>
-                    </div>
-                    <div class="top-sellers-wrap">
-                    <label class="top-sellers-label">
-                    <input type="text" class="top-sellers-input" name="surname" placeholder="Surname">
-                    </label>
-                    </div>
-                    <div class="top-sellers-wrap">
-                    <label class="top-sellers-label">Email
-                    <input type="email" class="top-sellers-input" name="email" placeholder="Enter your email">
-                    </label>
-                    </div>
-                    <div class="top-sellers-wrap">
-                    <label class="top-sellers-label">Phone number
-                    <input type="tel" class="top-sellers-input" name="tel" placeholder="Phone number" value="+380">
-                    <span class="top-sellers-icon">
-                        <svg class="" width="24" height="18">
-                            <use href=""></use>
-                        </svg>
-                    </span>
-                    </label>
-                    </div>
-                    <div class="top-sellers-wrap">
-                    <label  class="top-sellers-label">Card number
-                    <input type="text" class="top-sellers-input" name="card" placeholder="Enter card">
-                    <span class="top-sellers-icon">
-                        <svg class="" width="32" height="21">
-                            <use href=""></use>
-                        </svg>
-                    </span>
-                    </label>
-                    </div>
-                    <div class="top-sellers-wrap">
-                        <label class="form-label-textarea">Comment
-                        <textarea name="feedback" class="textarea" placeholder="Enter text"></textarea>
-                        </label>
-                    </div>
-                    <button type="submit" class="top-sellers-btn">Submit</button>
-                </form>
-        </div>
-</div>
+</section>
