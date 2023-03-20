@@ -31,10 +31,9 @@
     justify-content: center;
     align-items: center;
 }
-
-.container {
+ .container {
     background-color: #fafafa;
-}
+} 
 
 .top-sellers-title {
 font-family: 'Montserrat';
