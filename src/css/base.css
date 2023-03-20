@@ -17,6 +17,7 @@
     --info-color-text: rgba(17, 17, 17, 0.7);
     --swiper-dots: rgba(17, 17, 17, 0.1);
     --active-color: #FD9222;
+    --hovered-button-bg: #FCF1E0;
 
     --animation-time: 250ms;
     --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
