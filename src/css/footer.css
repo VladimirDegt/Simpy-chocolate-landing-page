@@ -1,15 +1,19 @@
 .footer {
     height: auto;
     background-color: var(--secondary-background-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .footer-container {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     margin-left: auto;
     margin-right: auto;
+}
+.footer-block {
+    margin-bottom: 32px;
 }
 .footer-accent {
     color: var(--active-color);
@@ -49,35 +53,27 @@
     flex-direction: row;
 }
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 .footer-icon-insta {
     stroke: var(--secondary-color-text);
     width: 18px;
     height: 18px;
+    display: block;
 }
 
 .footer-icon-twit {
     stroke: var(--secondary-color-text);
     width: 20px;
     height: 17px;
+    display: block;
 }
-.footer-line {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-    margin-top: 32px;
-}
+
 .footer-nav-block {
     display: block;
-    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .footer-nav-list {
     display: inline-block;
     flex-wrap: wrap;
@@ -111,12 +107,9 @@
     .footer-container {
         max-width: 734px;
     }
-
-.footer-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 52px;
-    padding-bottom: 32px;
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-text-block {
@@ -126,10 +119,12 @@
 .footer-text {
     font-size: 28px;
     line-height: 1.21;
+    margin-bottom: 0;
 }
 .footer-block {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .footer-icon-insta {
     stroke: var(--secondary-color-text);
@@ -142,17 +137,17 @@
     height: 18px;
 }
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
+.footer-nav-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0px;
+}
 .footer-nav-item {
     display: inline-block;
-    margin-right: 24px;
 }
-.footer-line {
-    margin-top: 50px;
-    margin-bottom: 24px;
+.footer-nav-block {
+    padding-top: 24px;
+    
 }
 }
 
@@ -162,8 +157,8 @@
     .footer-container {
         max-width: 1166px;
     }
-.footer-line {
-    margin-top: 58px;
+.footer-block {
+    margin-bottom: 58px;
    }
 
 }
