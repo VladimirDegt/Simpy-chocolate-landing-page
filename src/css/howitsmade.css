@@ -94,7 +94,7 @@
   color: var(--primary-color-text);
 }
 .how-its-made-list {
-  list-style: inside;
+  list-style-image: url('../img/howitsmade/Ellipse\ 1.svg');
   padding: 0;
   padding-left: 16px;
   margin-bottom: 0;
@@ -178,6 +178,7 @@
     max-width: 409px;
     width: 100%;
   }
+
   .how-its-made-item:not(:last-child) {
     margin-bottom: 24px;
   }
