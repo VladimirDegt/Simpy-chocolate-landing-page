@@ -12,6 +12,6 @@ Top Sellers - Danyil
 
 chocolate is loved - Kurshubadze Toma
 
-Subcribe - 
+Subcribe - Владислав
 
 footer - Evelina
