@@ -9,22 +9,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+      rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
     <script type="module" crossorigin src="/chocolate/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/chocolate/assets/index-6ee7522d.css">
+    <link rel="stylesheet" href="/chocolate/assets/index-7067757b.css">
   </head>
 
   <body>
@@ -35,7 +29,7 @@
         <nav class="header-navigation">
             <a class="header-logo" href="./index.html">
                 <svg class="heder-logo-icon">
-                    <use href="/chocolate/assets/icons-089885eb.svg#icon-logo-1"></use>
+                    <use href="/chocolate/assets/icons-4de5096c.svg#icon-logo-1"></use>
                 </svg>
             </a>
 
@@ -61,13 +55,13 @@
             <li class="heder-social-item">
                 <a class="heder-social-link" href="https://www.instagram.com/">
                     <svg class="heder-social-icon" width="20px" height="20px">
-                        <use href="/chocolate/assets/icons-089885eb.svg#icon-instagram"></use>
+                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-instagram"></use>
                     </svg></a>
             </li>
             <li>
                 <a class="heder-icon-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                     <svg class="heder-social-icon" width="22px" height="18px">
-                        <use href="/chocolate/assets/icons-089885eb.svg#icon-twitter"></use>
+                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-twitter"></use>
                     </svg></a>
             </li>
         </ul>
@@ -75,7 +69,7 @@
             <button type="button" class="burger-btn-open">
                 <a class="burger-btn-link" href="" target="_blank" rel="noopener noreferrer">
                     <svg class="burger-btn-icon">
-                        <use href="/chocolate/assets/icons-089885eb.svg#icon-menu-hamburger"></use>
+                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-menu-hamburger"></use>
                     </svg></a>
             </button>
         </div>
@@ -87,6 +81,42 @@
     <main>
       <!-- тут пишем лоад для поключения каждой секции -->
       <!-- соблюдайте их очередность -->
+
+      <section class="hero">
+    <div class="container">
+        <!-- Прихований заголовок -->
+        <h1 class="hero-hidden">HERO</h1>
+        <P class=" hero-title">
+            Treat yourself or a loved one <br class="br" /> to
+            <br class="brt" />our finest ingredients for a moment of pure delight!
+        </p>
+        <div class="hero-btn">
+            <div class="hero-btn-two">
+                <button data-modal-open class="hero-btn-buynow" type="button">Buy now</button>
+                <button
+                    onclick="window.location.href = 'https://www.figma.com/file/LWMTodUscRGMcbTpxE3kgI/Simply-Chocolate?node-id=0-1&t=eM2Fk8TMqUwwMiGD-0';"
+                    class="hero-btn-how ">How it’s made</button>
+            </div>
+            <div class="hero-scrol">
+                <p class="hero-scrol-text">scroll down</p>
+
+                <a class="hero-btn-scroll" href="#futer">
+                    <svg class="hero-btn-icon">
+                        <use href="../img/icons.svg#icon-hero-scroll-1"></use>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
       
     <section class="how-its-made">
       <h1 class="how-its-made-title">
@@ -136,7 +166,7 @@
     </section>
     
 
-      <section class="our-container">
+      <section >
   <div class="our-product-container">
     <h2 class="our-product-header">
       OUR<span class="our-product-header-orange"> PRODUCTS</span>
@@ -194,14 +224,17 @@
         <p class="our-product-item-description">Dark chocolate</p>
         <button type="submit" class="our-product-item-btn">54 UAH</button>
       </li>
-      <li class="our-product-item swiper-slide">
+      <!-- <li class="our-product-item swiper-slide">
         <img
-          src="/chocolate/assets/choco-classic-fc5bcf36.jpg"
+          src="./img/products/choco-classic.jpg"
           alt="classic milk chocolate"
           width="230"
           height="201"
           class="our-product-img"
-          srcset="/chocolate/assets/choco-classic-fc5bcf36.jpg 1x, /chocolate/assets/choco-classic@2x-9b702066.jpg 2x"
+          srcset="
+            ./img/products/choco-classic.jpg    1x,
+            ./img/products/choco-classic@2x.jpg 2x
+          "
         />
         <h3 class="our-product-item-title">Classic</h3>
         <p class="our-product-item-description">Milk chocolate</p>
@@ -209,12 +242,15 @@
       </li>
       <li class="our-product-item swiper-slide">
         <img
-          src="/chocolate/assets/choco-honey-cb4a3036.jpg"
+          src="./img/products/choco-honey.jpg"
           alt="honey milk chocolate"
           width="230"
           height="201"
           class="our-product-img"
-          srcset="/chocolate/assets/choco-honey-cb4a3036.jpg 1x, /chocolate/assets/choco-honey@2x-0191e3a2.jpg 2x"
+          srcset="
+            ./img/products/choco-honey.jpg    1x,
+            ./img/products/choco-honey@2x.jpg 2x
+          "
         />
         <h3 class="our-product-item-title">honey</h3>
         <p class="our-product-item-description">Milk chocolate</p>
@@ -222,12 +258,15 @@
       </li>
       <li class="our-product-item swiper-slide">
         <img
-          src="/chocolate/assets/choco-fruits-4c10f8ad.jpg"
+          src="./img/products/choco-fruits.jpg"
           alt="roasted fruits dark chocolate"
           width="230"
           height="201"
           class="our-product-img"
-          srcset="/chocolate/assets/choco-fruits-4c10f8ad.jpg 1x, /chocolate/assets/choco-fruits@2x-2ab5bd57.jpg 2x"
+          srcset="
+            ./img/products/choco-fruits.jpg    1x,
+            ./img/products/choco-fruits@2x.jpg 2x
+          "
         />
         <h3 class="our-product-item-title">Roasted fruits</h3>
         <p class="our-product-item-description">Dark chocolate</p>
@@ -235,17 +274,20 @@
       </li>
       <li class="our-product-item swiper-slide">
         <img
-          src="/chocolate/assets/choco-classic-white-a651f4cb.jpg"
+          src="./img/products/choco-classic-white.jpg"
           alt="classic white chocolate"
           width="230"
           height="201"
           class="our-product-img"
-          srcset="/chocolate/assets/choco-classic-white-a651f4cb.jpg 1x, /chocolate/assets/choco-classic-white@2x-33ac40fe.jpg 2x"
+          srcset="
+            ./img/products/choco-classic-white.jpg    1x,
+            ./img/products/choco-classic-white@2x.jpg 2x
+          "
         />
         <h3 class="our-product-item-title">Classic</h3>
         <p class="our-product-item-description">White chocolate</p>
         <button type="submit" class="our-product-item-btn">54 UAH</button>
-      </li>
+      </li> -->
     </ul>
     <div class="swiper-pagination">
       <button class="pagination-btn active"></button>
@@ -254,73 +296,6 @@
       <button class="pagination-btn last"></button>
     </div>
   </div>
-</section>
-
-       <section class="reviews container">
-  <h2 class="reviews-title">
-    <span class="reviews-title-accent">Chocolate</span> is loved
-  </h2>
-
-  <ul class="reviews-list swiper-wrapper list">
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-4-bae55cef.png 1x, /chocolate/assets/rewiew-photo-4@2x-d938ea39.png 2x" alt="photo of Victoria Dobrzhanska" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Victoria Dobrzhanska</h3>
-      <p class="reviews-text">
-        I love this chocolate bar. Perfect combination of light crispy wafer,
-        covered in a thin layer chocolate.
-      </p>
-    </li>
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-5-214e91e2.png 1x, /chocolate/assets/rewiew-photo-5@2x-1e26864d.png 2x" alt="photo of Nazar Babenko" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Nazar Babenko</h3>
-      <p class="reviews-text">
-        This chocolate confection is a delight! A delight! The wafer is light
-        and crisp, the hazelnut cream is smooth, and the chocolate is good.
-      </p>
-    </li>
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-6-be7c7b0e.png 1x, /chocolate/assets/rewiew-photo-6@2x-2c99bf5b.png 2x" alt="photo of Olena Kampusch" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Olena Kampusch</h3>
-      <p class="reviews-text">
-        Chocolate is a family favourite treat. Love the delicious smooth
-        chocolate and the creaminess inside. The wafer is soft but crunchy.
-      </p>
-    </li>
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-1-ae3f7016.png 1x, /chocolate/assets/rewiew-photo-1@2x-85c45438.png 2x" alt="photo of Natalia Sus" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Natalia Sus</h3>
-      <p class="reviews-text">
-        The chocolate assortment was delicious. Both dark and milk chocolate
-        pieces were smooth and just right on the sweetness level.
-      </p>
-    </li>
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-2-b11d649c.png 1x, /chocolate/assets/rewiew-photo-2@2x-1fcd5e61.png 2x" alt="photo of Danilo Nottingham" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Danilo Nottingham</h3>
-      <p class="reviews-text">
-        This is delicious. It so rich and flavorful you don’t need to use as
-        many. I love topping an apple with almond butter and these chips for a
-        snack.
-      </p>
-    </li>
-    <li class="reviews-item swiper-slide">
-      <img srcset="/chocolate/assets/rewiew-photo-3-464e6ac3.png 1x, /chocolate/assets/rewiew-photo-3@2x-58da3d61.png 2x" alt="photo of Irina Tydnyuk" class="reviews-img" width="80" height="80" />
-      <h3 class="reviews-item-title">Irina Tydnyuk</h3>
-      <p class="reviews-text">
-        This is simply the best chocolate around, and I'm just thrilled to
-        support a local company! Best local chocolate - world class :)
-      </p>
-    </li>
-  </ul>
-
-  <div class="swiper-pagination">
-    <button class="pagination-btn active"></button>
-    <button class="pagination-btn"></button>
-    <button class="pagination-btn"></button>
-    <button class="pagination-btn last"></button>
-  </div>
-
-  <button class="review-btn" type="button">Leave a review</button>
 </section>
 
       <section class="top-sellers">
@@ -389,6 +364,73 @@
             </ul>
     </div>
 </section>
+       <section class="reviews container">
+  <h2 class="reviews-title">
+    <span class="reviews-title-accent">Chocolate</span> is loved
+  </h2>
+
+  <ul class="reviews-list swiper-wrapper list">
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-4-bae55cef.png 1x, /chocolate/assets/rewiew-photo-4@2x-d938ea39.png 2x" alt="photo of Victoria Dobrzhanska" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Victoria Dobrzhanska</h3>
+      <p class="reviews-text">
+        I love this chocolate bar. Perfect combination of light crispy wafer,
+        covered in a thin layer chocolate.
+      </p>
+    </li>
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-5-214e91e2.png 1x, /chocolate/assets/rewiew-photo-5@2x-1e26864d.png 2x" alt="photo of Nazar Babenko" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Nazar Babenko</h3>
+      <p class="reviews-text">
+        This chocolate confection is a delight! A delight! The wafer is light
+        and crisp, the hazelnut cream is smooth, and the chocolate is good.
+      </p>
+    </li>
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-6-be7c7b0e.png 1x, /chocolate/assets/rewiew-photo-6@2x-2c99bf5b.png 2x" alt="photo of Olena Kampusch" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Olena Kampusch</h3>
+      <p class="reviews-text">
+        Chocolate is a family favourite treat. Love the delicious smooth
+        chocolate and the creaminess inside. The wafer is soft but crunchy.
+      </p>
+    </li>
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-1-ae3f7016.png 1x, /chocolate/assets/rewiew-photo-1@2x-85c45438.png 2x" alt="photo of Natalia Sus" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Natalia Sus</h3>
+      <p class="reviews-text">
+        The chocolate assortment was delicious. Both dark and milk chocolate
+        pieces were smooth and just right on the sweetness level.
+      </p>
+    </li>
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-2-b11d649c.png 1x, /chocolate/assets/rewiew-photo-2@2x-1fcd5e61.png 2x" alt="photo of Danilo Nottingham" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Danilo Nottingham</h3>
+      <p class="reviews-text">
+        This is delicious. It so rich and flavorful you don’t need to use as
+        many. I love topping an apple with almond butter and these chips for a
+        snack.
+      </p>
+    </li>
+    <li class="reviews-item swiper-slide">
+      <img srcset="/chocolate/assets/rewiew-photo-3-464e6ac3.png 1x, /chocolate/assets/rewiew-photo-3@2x-58da3d61.png 2x" alt="photo of Irina Tydnyuk" class="reviews-img" width="80" height="80" />
+      <h3 class="reviews-item-title">Irina Tydnyuk</h3>
+      <p class="reviews-text">
+        This is simply the best chocolate around, and I'm just thrilled to
+        support a local company! Best local chocolate - world class :)
+      </p>
+    </li>
+  </ul>
+
+  <div class="swiper-pagination">
+    <button class="pagination-btn active"></button>
+    <button class="pagination-btn"></button>
+    <button class="pagination-btn"></button>
+    <button class="pagination-btn last"></button>
+  </div>
+
+  <button class="review-btn" type="button">Leave a review</button>
+</section>
+
       <section class="subscribe-section">
   <div class="subscribe-overlay">
     <div class="content-wrapper">
@@ -406,9 +448,9 @@
 </section>
     </main>
 
-    <footer>
       <!-- тут пишем лоад для поключения футера -->
-      <footer class="footer">
+      <a name="futer"></a>
+<footer class="footer">
   <div class="footer-container">
     <div class="footer-block">
       <div class="footer-text-block">
@@ -423,16 +465,10 @@
             <p class="footer-address-text">Contact us</p>
             <ul class="footer-address-list">
               <li class="footer-address-item">
-                <a class="footer-address-link" href="tel:+380684439426"
-                  >+380 (68) 443-94-26</a
-                >
+                <a class="footer-address-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
               </li>
               <li class="footer-address-item">
-                <a
-                  class="footer-address-item"
-                  href="mailto:simplychoc@gmail.com"
-                  >simplychoc@gmail.com</a
-                >
+                <a class="footer-address-item" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
               </li>
             </ul>
           </address>
@@ -440,26 +476,16 @@
         <div class="footer-soc-block">
           <ul class="footer-soc-list">
             <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a class="footer-soc-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
                 <svg class="footer-icon-insta">
-                  <use href="../img/icons.svg#icon-instagram"></use>
+                  <use href="/chocolate/assets/icons-4de5096c.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a class="footer-soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
                 <svg class="footer-icon-twit">
-                  <use href="../img/icons.svg#icon-twitter"></use>
+                  <use href="/chocolate/assets/icons-4de5096c.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -472,29 +498,25 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#Home">Home</a>
+            <a class="footer-nav-link" href="#">Home</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#How-its-made?">How it’s made?</a>
+            <a class="footer-nav-link" href="#">How it’s made?</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#Our-products">Our products</a>
+            <a class="footer-nav-link" href="#">Our products</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#Top-sellers">Top sellers</a>
+            <a class="footer-nav-link" href="#">Top sellers</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#Chocolate-is-loved"
-              >Chocolate is loved</a
-            >
+            <a class="footer-nav-link" href="#Chocolate-is-loved">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
 </footer>
-
-    </footer>
 
     
     <script src="./js/swiper.js"></script>
