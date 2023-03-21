@@ -118,18 +118,27 @@
     background-color: var(--active-color);
 }
 
-.reviews .pagination-btn {
-    margin-top: 20px;
+.reviews .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-top: 20px;
+}
+
+.reviews .pagination-btn {
     display: inline-block;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     background-color: var(--swiper-dots);
-    margin-right: 13px;
     cursor: pointer;
 
     border: none;
+}
+
+.reviews .swiper-pagination-item:not(:last-child) {
+    margin-right: 13px;
 }
   
 .reviews .pagination-btn.active {
@@ -184,7 +193,7 @@
         margin-right: 16px;
     }
 
-    .reviews .pagination-btn {
+    .reviews .swiper-pagination{
         margin-top: 31px;
     }
 
