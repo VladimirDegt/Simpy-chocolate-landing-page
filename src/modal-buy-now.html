@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/modal-buy-now.css" />
+  </head>
+  <body>
+    <!-- КНОПКА ДЛЯ ПРИКЛАДУ -->
+    <main>
+      <div class="container">
+        <button class="modal-bn-button-submit" type="button" data-modal-bn-open>
+          Buy now
+        </button>
+      </div>
+    </main>
+
+    <div class="container">
+      <!-- МОДАЛКА -->
+      <div class="backdrop-bn is-hidden" data-modal-bn>
+        <div class="modal-bn">
+          <button type="button" class="modal-bn-button" data-modal-bn-close>
+            <svg class="modal-bn-btn-close">
+              <use href="./images/icons.svg#x-close" stroke="black"></use>
+            </svg>
+          </button>
+          <p class="title-modal-bn">
+            <span class="box-title-modal">BUY</span> NOW
+          </p>
+          <!-- Mobile version -->
+          <div class="swiper bn-swiper">
+            <div class="swiper-wrapper bn-swiper">
+              <div class="swiper-slide bn-swiper">
+                <div class="modal-bn-product-item">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/chocolate-piece-tab-desc@1x.jpg 1x,
+                        ./images/chocolate-piece-tab-desc@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/chocolate-piece-mob@2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/chocolate-piece-mob@1x.jpg"
+                      alt="chocolate-piece"
+                      width="167px"
+                      height="148px"
+                    />
+                  </picture>
+                  <button type="button" class="modal-bn-product-button">
+                    100 g
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide bn-swiper">
+                <div class="modal-bn-product-item option-chocolate-second">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/chocolate-milk-tab-desc@1x.jpg 1x,
+                        ./images/chocolate-milk-tab-desc@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/chocolate-milk-mob@2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/chocolate-milk-mob@1x.jpg"
+                      alt="chocolate-piece"
+                      width="167px"
+                      height="148px"
+                    />
+                  </picture>
+                  <button type="button" class="modal-bn-product-button">
+                    200 g
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide bn-swiper">
+                <div class="modal-bn-product-item option-chocolate-third">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/chocolate-bar-dark-tab-desc@1x.jpg 1x,
+                        ./images/chocolate-bar-dark-tab-desc@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/chocolate-bar-dark-mob@2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/chocolate-bar-dark-mob@1x.jpg"
+                      alt="chocolate-piece"
+                      width="167px"
+                      height="148px"
+                    />
+                  </picture>
+                  <button type="button" class="modal-bn-product-button">
+                    300 g
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-pagination bn-swiper"></div>
+          </div>
+          <!-- Tab-desc version -->
+          <ul class="modal-bn-product-list">
+            <li class="modal-bn-product-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/chocolate-piece-tab-desc@1x.jpg 1x,
+                    ./images/chocolate-piece-tab-desc@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/chocolate-piece-mob@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/chocolate-piece-mob@1x.jpg"
+                  alt="chocolate-piece"
+                  width="167px"
+                  height="148px"
+                />
+              </picture>
+              <button type="button" class="modal-bn-product-button">
+                100 g
+              </button>
+            </li>
+            <li class="modal-bn-product-item option-chocolate-second">
+              <picture>
+                <source
+                  srcset="
+                    ./images/chocolate-milk-tab-desc@1x.jpg 1x,
+                    ./images/chocolate-milk-tab-desc@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/chocolate-milk-mob@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/chocolate-milk-mob@1x.jpg"
+                  alt="chocolate-piece"
+                  width="167px"
+                  height="148px"
+                />
+              </picture>
+              <button type="button" class="modal-bn-product-button">
+                200 g
+              </button>
+            </li>
+            <li class="modal-bn-product-item option-chocolate-third">
+              <picture>
+                <source
+                  srcset="
+                    ./images/chocolate-bar-dark-tab-desc@1x.jpg 1x,
+                    ./images/chocolate-bar-dark-tab-desc@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/chocolate-bar-dark-mob@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/chocolate-bar-dark-mob@1x.jpg"
+                  alt="chocolate-piece"
+                  width="167px"
+                  height="148px"
+                />
+              </picture>
+              <button type="button" class="modal-bn-product-button">
+                300 g
+              </button>
+            </li>
+          </ul>
+
+          <form class="modal-form-buy">
+            <label class="modal-bn-form-field">
+              <span class="modal-bn-input-desc">Personal information</span>
+              <span class="input-personal-info-wrapper">
+                <input
+                  class="modal-bn-input-name"
+                  type="text"
+                  name="user_name"
+                  pattern="^[a-zA-Zа-яА-Я]"
+                  placeholder="Name" />
+                <input
+                  class="modal-bn-input"
+                  type="text"
+                  name="user_surname"
+                  pattern="^[a-zA-Zа-яА-Я]"
+                  placeholder="Surname"
+              /></span>
+            </label>
+            <label class="modal-bn-form-field">
+              <span class="modal-bn-input-desc">Email</span>
+              <input
+                class="modal-bn-input"
+                type="email"
+                name="user_email"
+                placeholder="Enter your email"
+              />
+            </label>
+
+            <label class="modal-bn-form-field">
+              <span class="modal-bn-input-desc"> Phone number </span>
+              <span class="modal-input-wrapper">
+                <span class="modal-wrapper-phone-hint">
+                  <svg class="modal-bn-phone-icon">
+                    <use href="./images/icons.svg#ukr-flag-number"></use>
+                  </svg>
+                  <p class="modal-phone-hint-number">+380</p>
+                </span>
+                <input
+                  class="modal-bn-input input-phone"
+                  type="tel"
+                  name="user_tel"
+                  placeholder="Phone number"
+                />
+              </span>
+            </label>
+            <label class="modal-bn-form-field">
+              <span class="modal-bn-input-desc">Card number</span>
+              <span class="modal-input-wrapper">
+                <input
+                  class="modal-bn-input input-card"
+                  type="number"
+                  name="user_card_number"
+                  placeholder="Enter card"
+                />
+                <svg class="modal-bn-card-icon">
+                  <use href="./images/icons.svg#mastercard"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="modal-bn-form-field">
+              <span class="modal-bn-input-desc">Comment</span>
+              <textarea
+                class="modal-bn-textarea"
+                name="user_comment"
+                placeholder="Enter text"
+              ></textarea>
+            </label>
+            <button
+              class="modal-bn-button-submit"
+              type="button"
+              data-modal-open-thank
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div class="modal-bn-thank is-hidden" data-modal-thank>
+          <button
+            type="button"
+            class="modal-bn-thank-close-btn"
+            data-modal-close-thank
+          >
+            <svg class="modal-bn-thank-close-icon">
+              <use href="./images/icons.svg#x-close" stroke="#FD9222"></use>
+            </svg>
+          </button>
+          <h2 class="modal-bn-thank-phrase">THANK YOU!</h2>
+          <p class="modal-bn-thank-text">
+            We are glad that you ordered our chocolate and we are giving you a
+            20% discount on all our products.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/modal-bn.js"></script>
+    <script src="/modal-thank.js"></script>
+    <script src="/swiper-bn.js"></script>
+  </body>
+</html>
