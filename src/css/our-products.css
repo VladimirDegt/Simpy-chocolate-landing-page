@@ -24,6 +24,9 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 72px;
+  width: 355px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .our-product-list {
   display: flex;
@@ -114,9 +117,11 @@
     padding-right: 16px;
   }
   .our-product-container {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 100px;
+    width: 734px;
+    
   }
   .our-product-item {
     width: 270px;
@@ -128,5 +133,6 @@
 @media screen and (min-width: 1200px) {
   .our-product-container {
     padding-bottom: 120px;
+    width: 1166px;
   }
 }
