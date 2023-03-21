@@ -45,7 +45,7 @@
     .benefits-containre
     {
         max-width: 768px;
-        padding: 50px 16px;
+        padding: 16px;
     }
     .benefits-content
     {
@@ -73,7 +73,9 @@
         position: relative;
         margin-right: 0;
         margin-bottom: 0;
+        margin-right: 35px;
     }
+    
     .benefits-content::after 
     {
         content: "";
