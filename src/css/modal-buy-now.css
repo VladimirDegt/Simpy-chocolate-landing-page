@@ -1,0 +1,483 @@
+:root {
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ================================================MODAL-BUY-NOW=============================================================================== */
+
+.backdrop-bn {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+  overflow-y: scroll;
+}
+
+.backdrop-bn.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-bn {
+  background-color: #fafafa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  padding: 32px 24px;
+  width: 311px;
+}
+
+.modal-bn-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-bn-btn-close {
+  width: 24px;
+  height: 24px;
+}
+
+.title-modal-bn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #111111;
+
+  margin-bottom: 32px;
+}
+
+.box-title-modal {
+  color: #fd9222;
+}
+.swiper.bn-swiper {
+  width: 231px;
+  height: 284px;
+  margin-bottom: 32px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  margin-bottom: -11px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(17, 17, 17, 0.3);
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  background-color: #fd9222;
+}
+.modal-bn-product-item {
+  margin-bottom: 32px;
+  text-align: center;
+  width: 231px;
+  height: 257px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 32px 32px 28px 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-bn-product-button {
+  margin-top: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  color: #111111;
+
+  width: 96px;
+  height: 33px;
+
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+.modal-bn-product-button:hover,
+.modal-bn-product-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.modal-form-buy {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-bn-input-desc {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.modal-bn-form-field {
+  margin-bottom: 18px;
+}
+.modal-bn-input-name {
+  margin-bottom: 14px;
+}
+.modal-bn-input-name,
+.modal-bn-input,
+.modal-bn-textarea {
+  padding: 14px 18px;
+  width: 100%;
+  height: 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: black;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  background-color: transparent;
+}
+.modal-bn-input-name::placeholder,
+.modal-bn-input::placeholder,
+.modal-bn-textarea::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.modal-bn-input.input-phone {
+  padding-left: 107px;
+}
+
+.modal-bn-phone-icon {
+  width: 24px;
+  height: 24px;
+}
+.modal-wrapper-phone-hint {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modal-phone-hint-number {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+}
+
+.modal-wrapper-phone-hint::after {
+  position: absolute;
+  left: 74px;
+  transform: rotate(90deg);
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: rgba(17, 17, 17, 0.1);
+  border-radius: 2px;
+}
+.modal-bn-input.input-card {
+  padding-right: 45px;
+}
+
+.modal-bn-card-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 32px;
+  height: 21px;
+  transform: translateY(-50%);
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-bn-textarea {
+  height: 91px;
+}
+.modal-bn-button-submit {
+  width: 109px;
+  height: 41px;
+  left: 24px;
+  top: 934px;
+
+  background: #fd9222;
+  border-radius: 100px;
+  border: 0;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  color: #ffffff;
+
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+.modal-bn-button-submit:hover,
+.modal-bn-button-submit:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-bn-product-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    display: none;
+  }
+
+  .modal-bn {
+    width: 609px;
+    padding: 48px;
+  }
+  .title-modal-bn {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .modal-bn-product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .modal-bn-product-item {
+    width: 160px;
+    height: 196px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px 20px 18px 20px;
+  }
+
+  .modal-bn-product-button {
+    margin-top: 14px;
+  }
+  .modal-bn-input-desc {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-bn-input-name {
+    margin-bottom: 0;
+  }
+  .modal-bn-input-name,
+  .modal-bn-input,
+  .modal-bn-textarea {
+    height: 66px;
+    padding: 22px 24px;
+    font-size: 18px;
+  }
+
+  .modal-bn-input-name::placeholder,
+  .modal-bn-input::placeholder,
+  .modal-bn-textarea::placeholder {
+    font-size: 18px;
+  }
+  .input-personal-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .modal-bn-phone-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .modal-phone-hint-number {
+    font-size: 18px;
+  }
+
+  .modal-bn-card-icon {
+    width: 44px;
+    height: 30px;
+  }
+  .modal-wrapper-phone-hint {
+    gap: 18px;
+  }
+  .modal-wrapper-phone-hint::after {
+    left: 110px;
+    width: 40px;
+  }
+
+  .modal-bn-input.input-phone {
+    padding-left: 177px;
+  }
+
+  .modal-bn-input.input-card {
+    padding-right: 60px;
+  }
+
+  .modal-bn-textarea {
+    height: 137px;
+  }
+  .modal-bn-button-submit {
+    width: 133px;
+    height: 45px;
+  }
+}
+/* ================================================MODAL-THANK-YOU=============================================================================== */
+.modal-bn-thank {
+  position: absolute;
+  width: 311px;
+  height: 350px;
+  background: #fd9222 url(../images/chocolat-desing.png) no-repeat -5px 92px fixed;
+  background-size: contain;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 84px;
+  padding-right: 24px;
+  padding-left: 68px;
+}
+
+.modal-bn-thank.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-bn.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-bn-thank-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background: #fcf1e0;
+  border: 0;
+}
+
+.modal-bn-thank-close-icon {
+  width: 24px;
+  height: 24px;
+}
+.modal-bn-thank-phrase {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fcf1e0;
+  margin-bottom: 8px;
+}
+
+.modal-bn-thank-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fcf1e0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-bn-thank {
+    position: absolute;
+    width: 516px;
+    height: 414px;
+    background: #fd9222 url(../images/chocolat-desing.png) no-repeat -5px 92px fixed;
+    background-size: contain;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 154px 44px 154px 164px;
+    transition: opacity var(--transition-dur-and-func),
+      visibility var(--transition-dur-and-func);
+  }
+
+  .modal-bn-thank-phrase {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fcf1e0;
+    margin-bottom: 8px;
+  }
+
+  .modal-bn-thank-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+}

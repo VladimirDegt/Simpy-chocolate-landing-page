@@ -1,0 +1,164 @@
+.footer {
+    height: auto;
+    background-color: var(--secondary-background-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-block {
+    margin-bottom: 32px;
+}
+.footer-accent {
+    color: var(--active-color);
+} 
+.footer-text {
+    color: var(--secondary-color-text);
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+.footer-contact-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+.footer-address {
+    color: var(--secondary-color-text);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+        
+}
+.footer-address-text {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+}
+
+.footer-soc-list {
+    display:flex;
+    gap: 17px; 
+    flex-direction: row;
+}
+
+
+.footer-icon-insta {
+    stroke: var(--secondary-color-text);
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.footer-icon-twit {
+    stroke: var(--secondary-color-text);
+    width: 20px;
+    height: 17px;
+    display: block;
+}
+
+.footer-nav-block {
+    display: block;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+.footer-nav-list {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+       
+}
+
+.footer-nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--secondary-color-text);
+   
+}
+
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 375px) {
+    .footer-container {
+        max-width: 365px;
+    }
+}
+
+/*-----------TABLET-----------------*/
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        max-width: 734px;
+    }
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-text-block {
+    display: flex;
+      
+}
+.footer-text {
+    font-size: 28px;
+    line-height: 1.21;
+    margin-bottom: 0;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer-icon-insta {
+    stroke: var(--secondary-color-text);
+    width: 20px;
+    height: 20px;
+}
+.footer-icon-twit {
+    stroke: var(--secondary-color-text);
+    width: 22px;
+    height: 18px;
+}
+
+
+.footer-nav-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0px;
+}
+.footer-nav-item {
+    display: inline-block;
+}
+.footer-nav-block {
+    padding-top: 24px;
+    
+}
+}
+
+/*-----------DESKTOP-----------------*/
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        max-width: 1166px;
+    }
+.footer-block {
+    margin-bottom: 58px;
+   }
+
+}
