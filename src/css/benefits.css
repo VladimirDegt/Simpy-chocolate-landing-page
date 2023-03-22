@@ -9,6 +9,8 @@
     {
         max-width: 375px;
         padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .benefits-svg
     {
