@@ -1,34 +1,30 @@
 .subscribe-section {
-  color: var(--secondary-color-text);
-}
-.subscribe-overlay {
   max-width: 1200px;
-
-  padding-top: 62px;
-  padding-bottom: 62px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.2),
-      rgba(46, 47, 66, 0.2)
-    ),
-    url(/img/subscribe/subscribe-mobile.jpg);
-  background-color: var(--secondary-background-color);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  text-align: center;
+  
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.2),
+        rgba(46, 47, 66, 0.2)),
+      url(/img/subscribe/subscribe-mobile.jpg);
+    background-color: var(--secondary-background-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    color: var(--secondary-color-text);
+    text-align: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .subscribe-overlay {
+  .subscribe-section {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.2),
@@ -100,7 +96,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-overlay {
+  .subscribe-section {
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(
@@ -114,7 +110,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .subscribe-overlay {
+    .subscribe-section {
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.2),
@@ -146,7 +142,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe-overlay {
+  .subscribe-section {
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(to right,
@@ -158,7 +154,7 @@
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-    .subscribe-overlay {
+    .subscribe-section {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)),
