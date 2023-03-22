@@ -1,14 +1,18 @@
 /* Mobile */
-@media screen and (min-width: 375px)
-{
+/* @media screen and (min-width: 375px)
+{ */
     .benefits
     {
         background: var(--secondary-background-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        height: auto;
     }
     .benefits-containre
     {
-        max-width: 375px;
-        padding: 10px;
+        /* max-width: 375px; */
+        padding-left: 10px;
+        padding-right: 10px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -39,15 +43,21 @@
         color: rgba(255, 255, 255, 0.5);
         padding: 0 0 20px;
     } 
-}
+
+        /* Mobile */
+        @media screen and (min-width: 375px)
+    {
+    .benefits-containre {
+        max-width: 358px;}
+    }
 
 /* Tablet */
 @media screen and (min-width: 768px)
 {
     .benefits-containre
     {
-        max-width: 768px;
-        padding: 16px;
+        max-width: 706px;
+        /* padding: 15px; */
     }
     .benefits-content
     {
@@ -64,7 +74,7 @@
     .benefits-containre
     {
         max-width: 1200px;
-        padding: 50px;
+        /* padding: 50px; */
     }
     .benefits-text
     {
