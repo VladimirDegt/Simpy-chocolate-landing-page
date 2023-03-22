@@ -1,0 +1,191 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.6);
+
+  opacity: 1;
+  transition: opacity var(--animation-time) var(--animation-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 311px;
+  height: 350px;
+  padding-bottom: 32px;
+  background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--animation-time) var(--animation-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.bg-container {
+  padding-top: 14px;
+  padding-right: 14px;
+  height: 169px;
+  background-image: url(/img/email-pop-up/choco-mobile.jpg);
+  background-color: var(--secondary-background-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .bg-container {
+    background-image: url(/img/email-pop-up/choco-mobile@2x.jpg);
+  }
+}
+
+.btn-modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+
+  transition: background-color var(--animation-time) var(--animation-function),
+    color var(--animation-time) var(--animation-function);
+}
+
+.icon {
+  display: block;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.content-container {
+  padding: 32px 24px;
+}
+
+.content-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.accent-text {
+  color: var(--active-color);
+}
+
+.thumb {
+  position: relative;
+  height: 45px;
+}
+
+.btn-submit {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100px;
+
+  border-radius: 25px;
+
+  color: var(--secondary-color-text);
+  background-color: var(--active-color);
+  border: none;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  transition: background-color var(--animation-time) var(--animation-function),
+    color var(--animation-time) var(--animation-function);
+}
+
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+  color: var(--active-color);
+  background-color: var(--hovered-button-bg);
+}
+
+.input {
+  padding-left: 18px;
+  padding-right: 118px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.input::placeholder {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    padding-top: 24px;
+    padding-right: 24px;
+    height: 196px;
+    background-image: url(/img/email-pop-up/choco-desktop-tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .bg-container {
+      background-image: url(/img/email-pop-up/choco-desktop-tablet@2x.jpg);
+    }
+  }
+
+  .content-container {
+    padding: 40px;
+  }
+
+  .content-title {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .input {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 313px;
+    height: 100%;
+    border-radius: 25px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+
+  .btn-submit {
+    width: 137px;
+  }
+  .backdrop .modal {
+    width: 538px;
+    height: 412px;
+  }
+}

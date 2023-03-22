@@ -12,9 +12,12 @@
 }
 
 .reviews {
+    padding-top: 72px;
     padding-bottom: 72px;
 
     text-align: center;
+
+    background-color: var(--primary-background-color);
 }
 
 .reviews-title {
@@ -118,28 +121,33 @@
     background-color: var(--active-color);
 }
 
-.reviews .pagination-btn {
-    margin-top: 20px;
+.reviews .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-top: 20px;
+}
+
+.reviews .pagination-btn {
     display: inline-block;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     background-color: var(--swiper-dots);
-    margin-right: 13px;
     cursor: pointer;
 
     border: none;
+}
+
+.reviews .swiper-pagination-item:not(:last-child) {
+    margin-right: 13px;
 }
   
 .reviews .pagination-btn.active {
     width: 28px;
     border-radius: 10px;
     background-color: var(--active-color);
-}
-
-.reviews .pagination-btn.last {
-    margin-right: 0;
 }
 
 
@@ -155,6 +163,7 @@
     }
 
     .reviews {
+        padding-top: 100px;
         padding-bottom: 100px;
 
     }
@@ -184,7 +193,7 @@
         margin-right: 16px;
     }
 
-    .reviews .pagination-btn {
+    .reviews .swiper-pagination{
         margin-top: 31px;
     }
 
@@ -200,6 +209,7 @@
 @media screen and (min-width: 1200px) {
 
     .reviews {
+        padding-top: 128px;
         padding-bottom: 128px;
     }
 

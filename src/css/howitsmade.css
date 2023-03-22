@@ -6,6 +6,11 @@
   font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
 } */
+
+ .how-its-made{
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 .how-its-made-container {
   width: 100%;
   justify-content: center;
@@ -16,7 +21,6 @@
   padding-left: 15px;
   padding-right: 15px;
   flex-wrap: wrap;
-  padding-bottom: 72px;
 }
 .video {
   display: flex;
@@ -74,7 +78,7 @@
   line-height: 1.33;
   color: var(--primary-color-text);
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .how-its-made-item {
   color: #4c4c4c;
@@ -90,7 +94,7 @@
   color: var(--primary-color-text);
 }
 .how-its-made-list {
-  list-style: inside;
+  list-style-image: url('../img/howitsmade/Ellipse\ 1.svg');
   padding: 0;
   padding-left: 16px;
   margin-bottom: 0;
@@ -132,20 +136,29 @@
   .how-its-made-list-title {
     max-width: 360px;
     width: 100%;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
   }
   .how-its-made-item {
     max-width: 464px;
     width: 100%;
   }
+  .how-its-made{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .how-its-made-container {
     max-width: 1136px;
-    flex-direction: row;
     flex-wrap: nowrap;
-    padding-bottom: 128px;
+    display: block;
+    
   }
+.how-its-made-content{
+  display: flex;
+  flex-direction: row;
+}
+  
 
   .video {
     margin-right: 20px;
@@ -165,6 +178,7 @@
     max-width: 409px;
     width: 100%;
   }
+
   .how-its-made-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -172,9 +186,13 @@
     display: none;
   }
   .how-its-made-list-title {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
   }
   .how-its-made-list {
     margin-top: 0;
+  }
+  .how-its-made{
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
