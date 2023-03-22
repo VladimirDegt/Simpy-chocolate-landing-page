@@ -12,6 +12,7 @@
 }
 
 .reviews {
+    padding-top: 72px;
     padding-bottom: 72px;
 
     text-align: center;
@@ -162,6 +163,7 @@
     }
 
     .reviews {
+        padding-top: 100px;
         padding-bottom: 100px;
 
     }
@@ -207,6 +209,7 @@
 @media screen and (min-width: 1200px) {
 
     .reviews {
+        padding-top: 128px;
         padding-bottom: 128px;
     }
 
