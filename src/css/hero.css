@@ -5,7 +5,13 @@
     margin-right: auto;
     
 }
-
+.hero-grup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 21px;
+    
+} 
 .hero>.container {
     border-radius: 15px;
     max-width: 280px;
@@ -55,14 +61,23 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     color:var(--secondary-color-text);
-    padding-top: 395px;
+
     margin-bottom: 32px;
 }
 
 .brt {
     display: none;
 }
-
+ .hero-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+       
+       
+        /* flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between; */
+    }
 .hero-btn-two {
     display: flex;
     justify-content: space-between;
@@ -108,7 +123,7 @@
     align-items: center;
     display: flex;
     gap: 12px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -171,12 +186,15 @@
                 url('../img/hero/hero-tablet@2x.jpg')
         }
     }
-
+.hero-grup{
+    padding-bottom: 40px;
+}
     .hero-btn {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .hero-btn-two {
