@@ -56,5 +56,12 @@
 <symbol id="icon-hero-scroll-1" viewBox="0 0 56 32">
 <path  d="M30.604 21.132c-0.665 0.669-1.585 1.083-2.602 1.083s-1.937-0.414-2.602-1.082l-0-0-16.8-16.828c-0.672-0.725-1.629-1.177-2.692-1.177-2.026 0-3.668 1.642-3.668 3.668 0 1.055 0.445 2.006 1.158 2.675l0.002 0.002 16.828 16.832c1.99 1.988 4.738 3.218 7.774 3.218s5.784-1.23 7.774-3.218l16.828-16.832c0.658-0.663 1.065-1.576 1.065-2.584 0-2.025-1.642-3.667-3.667-3.667-1.017 0-1.938 0.414-2.602 1.083l-0 0-16.8 16.828z"></path>
 </symbol>
+<symbol id="icon-chocolate-logo-1" viewBox="0 0 32 32">
+<path fill="#fcf1e0" style="fill: var(--color3, #fcf1e0)" d="M3.944 20.076l10.777-17.424 0.64-0.675 8.235 5.491 0.057 3.315 2.009 3.28-8.88 14.076-12.839-8.063z"></path>
+<path fill="none" stroke="#fd9222" style="stroke: var(--color1, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M21.635 23.88l-14.187-8.864M11.361 8.599l14.185 8.864M10.629 25.864l11.736-19.249M27.176 14.788c-3.040-1.899-4.233-3.383-2.277-6.591l-9.627-6.016-11.735 19.251 14.187 8.864 9.453-15.507z"></path>
+</symbol>
+<symbol id="icon-close-1" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.333 2.667l-26.665 26.665M2.667 2.667l26.665 26.665"></path>
+</symbol>
 </defs>
 </svg>
