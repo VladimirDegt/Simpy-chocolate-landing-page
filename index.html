@@ -18,7 +18,7 @@
 
     
     <script type="module" crossorigin src="/chocolate/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/chocolate/assets/index-8b9c53e6.css">
+    <link rel="stylesheet" href="/chocolate/assets/index-3c38c377.css">
   </head>
 
   <body>
@@ -27,9 +27,12 @@
       <header class="header">
     <div class="container">
         <nav class="header-navigation">
+
+
             <a class="header-logo" href="./index.html">
+                <P class="logo-text"> <b class="logo-text-simply">SIMPLY</b> CHOCOLATE</P>
                 <svg class="heder-logo-icon">
-                    <use href="/chocolate/assets/icons-4de5096c.svg#icon-logo-1"></use>
+                    <use href="/chocolate/assets/icons-3791159a.svg#icon-chocolate-logo-1"></use>
                 </svg>
             </a>
 
@@ -53,29 +56,76 @@
         </nav>
         <ul class="heder-social">
             <li class="heder-social-item">
-                <a class="heder-social-link" href="https://www.instagram.com/">
+                <a class="heder-social-link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer">
                     <svg class="heder-social-icon" width="20px" height="20px">
-                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-instagram"></use>
+                        <use href="/chocolate/assets/icons-3791159a.svg#icon-instagram"></use>
                     </svg></a>
             </li>
             <li>
-                <a class="heder-icon-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <a class="heder-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                     <svg class="heder-social-icon" width="22px" height="18px">
-                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-twitter"></use>
+                        <use href="/chocolate/assets/icons-3791159a.svg#icon-twitter"></use>
                     </svg></a>
             </li>
         </ul>
-        <div>
-            <button type="button" class="burger-btn-open">
-                <a class="burger-btn-link" href="" target="_blank" rel="noopener noreferrer">
-                    <svg class="burger-btn-icon">
-                        <use href="/chocolate/assets/icons-4de5096c.svg#icon-menu-hamburger"></use>
-                    </svg></a>
-            </button>
-        </div>
-        <div>
+
+        <button type="button" class="burger-btn-open" data-menu-open>
+            <svg class="burger-btn-icon">
+                <use href="/chocolate/assets/icons-3791159a.svg#icon-menu-hamburger"></use>
+            </svg>
+        </button>
+    </div>
+    <div class=" is-menu-close mobile-menu  " data-menu>
+        <div class="container">
+            <div>
+                <button data-menu-close type="button" class="mobile-menu-cloce">
+                    <svg class="mobile-menu-close-icon">
+                        <use href="/chocolate/assets/icons-3791159a.svg#icon-close-1"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="header-list-close">
+                        <li class="header-item-close">
+                            <a class="header-link-close  " href="">Home</a>
+                        </li>
+                        <li class="header-item-close">
+                            <a class="header-link-close  " href=" ">How it’s made?</a>
+                        </li>
+                        <li class="header-item-close">
+                            <a class="header-link-close" href="">Our products</a>
+                        </li>
+                        <li class="header-item-close">
+                            <a class="header-link-close" href="">Top sellers</a>
+                        </li>
+                        <li class="header-item-close">
+                            <a class="header-link-close" href="">Chocolate is loved</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <ul class="header-social-close">
+                    <li class="heder-social-item">
+                        <a class="heder-social-link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="heder-social-icon-close" width="20px" height="20px">
+                                <use href="/chocolate/assets/icons-3791159a.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a class="heder-social-link" href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="heder-social-icon-close" width="22px" height="18px">
+                                <use href="/chocolate/assets/icons-3791159a.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+
+
+            </div>
         </div>
 </header>
+<script src="./js/menu.js"></script>
     </header>
 
     <main>
@@ -85,36 +135,28 @@
       <section class="hero">
     <div class="container">
         <!-- Прихований заголовок -->
-        <h1 class="hero-hidden">HERO</h1>
-        <P class=" hero-title">
+        <h2 class="hero-hidden">HERO</h2>
+        <h1 class=" hero-title">
             Treat yourself or a loved one <br class="br" /> to
             <br class="brt" />our finest ingredients for a moment of pure delight!
-        </p>
+        </h1>
+
+
         <div class="hero-btn">
             <div class="hero-btn-two">
                 <button data-modal-open class="hero-btn-buynow" type="button">Buy now</button>
-                <button
-                    onclick="window.location.href = 'https://www.figma.com/file/LWMTodUscRGMcbTpxE3kgI/Simply-Chocolate?node-id=0-1&t=eM2Fk8TMqUwwMiGD-0';"
-                    class="hero-btn-how ">How it’s made</button>
+                <button type="button" class="hero-btn-how ">How it’s made</button>
             </div>
-            <div class="hero-scrol">
-                <p class="hero-scrol-text">scroll down</p>
+            <button type="button" class=" hero-btn-scroll">
+                scroll down
+                <div class="hero-btn-down"><svg class="hero-btn-icon">
+                        <use href="/chocolate/assets/icons-3791159a.svg#icon-hero-scroll-1"></use>
+                    </svg> </div>
 
-                <a class="hero-btn-scroll" href="#futer">
-                    <svg class="hero-btn-icon">
-                        <use href="../img/icons.svg#icon-hero-scroll-1"></use>
-                    </svg>
-                </a>
-
-            </div>
+            </button>
 
         </div>
     </div>
-
-
-
-
-
 
 </section>
       <section class="benefits">
@@ -493,8 +535,7 @@
     </main>
 
       <!-- тут пишем лоад для поключения футера -->
-      <a name="futer"></a>
-<footer class="footer">
+      <footer class="footer">
   <div class="footer-container">
     <div class="footer-block">
       <p class="footer-text">
@@ -521,14 +562,14 @@
             <li class="footer-soc-item">
               <a class="footer-soc-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
                 <svg class="footer-icon-insta">
-                  <use href="/chocolate/assets/icons-4de5096c.svg#icon-instagram"></use>
+                  <use href="/chocolate/assets/icons-3791159a.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a class="footer-soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
                 <svg class="footer-icon-twit">
-                  <use href="/chocolate/assets/icons-4de5096c.svg#icon-twitter"></use>
+                  <use href="/chocolate/assets/icons-3791159a.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
