@@ -67,7 +67,13 @@
     height: 17px;
     display: block;
 }
+.footer-icon-insta:is(:hover, :focus) {
+    stroke: var(--active-color);
+}
 
+.footer-icon-twit:is(:hover, :focus) {
+    stroke: var(--active-color);
+}
 .footer-nav-block {
     display: block;
     padding-top: 32px;
