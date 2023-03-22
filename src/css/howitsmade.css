@@ -8,7 +8,6 @@
 } */
 
  .how-its-made{
-    padding-top: 72px;
     padding-bottom: 72px;
   }
 .how-its-made-container {
@@ -142,7 +141,7 @@
     width: 100%;
   }
   .how-its-made{
-    padding-top: 100px;
+    
     padding-bottom: 100px;
   }
 }
@@ -191,7 +190,7 @@
     margin-top: 0;
   }
   .how-its-made{
-    padding-top: 128px;
+    
     padding-bottom: 128px;
   }
 }
