@@ -1,104 +1,299 @@
-<section class="top-sellers">
+<section class="top-sell" id="top-sellers-section">
   <div class="container">
-    <h2 id="sellers" class="top-sellers-title">
-      <span class="top-sellers-title-orange">TOP</span> SELLERS
-    </h2>
-    <div class="top-sellers-list">
-      <div class="top-sellers-item">
-        <div class="img-top">
-          <picture>
-            <source
-              srcset="
-                /img/top-sellers/option-1-desktop.jpg     1x,
-                /img//top-sellers/option-1-desktop@2x.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                /img/top-sellers/option-1-tablet.jpg    1x,
-                /img/top-sellers/option-1-tablet@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                /img/top-sellers/option-1-mobile.jpg    1x,
-                /img/top-sellers/option-1-mobile@2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="/img/top-sellers/option-1-tablet.jpg"
-              alt="chocolate beans"
-            />
-          </picture>
-        </div>
-        <p class="top-sellers-text">
+    <h2 class="top-sell-title"><span>TOP</span> SELLERS</h2>
+    <ul class="top-sell-list">
+      <li class="top-sell-list-item">
+        <picture>
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img1-mob.jpg    1x,
+              /img/top-sellers/top-sell-img1-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img1-tab.jpg    1x,
+              /img/top-sellers/top-sell-img1-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img1-desk.jpg    1x,
+              /img/top-sellers/top-sell-img1-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="/img/top-sellers/top-sell-img1-mob.jpg"
+            alt="chocolate, nuts,
+          coffee beans"
+          />
+        </picture>
+        <p class="top-sell-text-mob">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
           was first discovered by the Native American tribe called the Mayans.
         </p>
-      </div>
-
-      <div class="top-sellers-item">
-        <div class="img-top">
-          <picture>
-            <source
-              srcset="
-                /img/top-sellers/option-2-desktop.jpg     1x,
-                /img//top-sellers/option-2-desktop@2x.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                /img/top-sellers/option-2-tablet.jpg    1x,
-                /img/top-sellers/option-2-tablet@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                /img/top-sellers/option-2-mobile.jpg    1x,
-                /img/top-sellers/option-2-mobile@2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="/img/top-sellers/option-2-tablet.jpg"
-              alt="chocolate beans"
-            />
-          </picture>
-        </div>
-        <button type="button" class="top-sellers-btn" data-modal-bn-open>
-          Buy Now
-        </button>
-      </div>
-      <div class="top-sellers-item hidden">
-        <div class="img-top">
-          <picture>
-            <source
-              srcset="
-                /img/top-sellers/option-3-desktop.jpg     1x,
-                /img//top-sellers/option-3-desktop@2x.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                /img/top-sellers/option-3-desktop.jpg     1x,
-                /img//top-sellers/option-3-desktop@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img
-              src="/img/top-sellers/option-2-tablet.jpg"
-              alt="chocolate beans"
-            />
-          </picture>
-        </div>
-      </div>
+      </li>
+      <li class="top-sell-list-item">
+        <picture>
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img2-mob.jpg    1x,
+              /img/top-sellers/top-sell-img2-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img2-tab.jpg    1x,
+              /img/top-sellers/top-sell-img2-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img2-desk.jpg    1x,
+              /img/top-sellers/top-sell-img2-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img src="/img/top-sellers/top-sell-img2-mob.jpg" alt="chocolate" />
+        </picture>
+      </li>
+      <li class="top-sell-list-item">
+        <picture>
+          <source
+            srcset="
+              /img/top-sellers/top-sell-img3-desk.jpg    1x,
+              /img/top-sellers/top-sell-img3-desk@2x.jpg 2x
+            "
+          />
+          <img src="/img/top-sellers/top-sell-img3-desk.jpg" alt="chocolate" />
+        </picture>
+      </li>
+    </ul>
+    <div class="top-sell-btn-wrap">
+      <p class="top-sell-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button data-modal="1" type="button" class="top-sell-btn js-open-modal">
+        Buy now
+      </button>
     </div>
   </div>
 </section>
+
+<!-- MODAL BUY NOW -->
+<div data-modal="1" class="modal modal-buy-now">
+  <button class="modal-buy-now-close">
+    <svg class="js-modal-close" width="24" height="24">
+      <use href="./img/icons.svg#simple-close-btn"></use>
+    </svg>
+  </button>
+  <h2 class="modal-buy-now-title"><span>BUY</span> NOW</h2>
+  <ul class="modal-buy-now-list">
+    <li class="modal-buy-now-list-item">
+      <picture>
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img1-mob.png    1x,
+            /img/top-sellers/modal-buy-now-img1-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img1.png    1x,
+            /img/top-sellers/modal-buy-now-img1@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/img/top-sellers/modal-buy-now-img1-mob.png"
+          alt="chocolate"
+        />
+      </picture>
+      <p class="modal-buy-now-list-item-desc">100 g</p>
+    </li>
+    <li class="modal-buy-now-list-item">
+      <picture>
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img2-mob.png    1x,
+            /img/top-sellers/modal-buy-now-img2-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img2.png    1x,
+            /img/top-sellers/modal-buy-now-img2@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/img/top-sellers/modal-buy-now-img2-mob.png"
+          alt="chocolate"
+        />
+      </picture>
+      <p class="modal-buy-now-list-item-desc">200 g</p>
+    </li>
+    <li class="modal-buy-now-list-item">
+      <picture>
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img3-mob.png    1x,
+            /img/top-sellers/modal-buy-now-img3-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /img/top-sellers/modal-buy-now-img3.png    1x,
+            /img/top-sellers/modal-buy-now-img3@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/img/top-sellers/modal-buy-now-img3-mob.png"
+          alt="chocolate"
+        />
+      </picture>
+      <p class="modal-buy-now-list-item-desc">300 g</p>
+    </li>
+  </ul>
+  <form action="/src/js/validate.js">
+    <div class="personal-info">
+      <div class="modal-buy-now-form-label">
+        <p>Personal information</p>
+
+        <div class="modal-buy-now-input-name-wrap">
+          <input
+            class="personal-info__name"
+            type="text"
+            name="name"
+            pattern="[A-Za-z]{3,16}+\s"
+            placeholder="Name"
+            aria-label="name"
+            autofocus
+            required="required"
+            maxlength="16"
+            minlength="3"
+            title="At least 3 characters"
+          />
+          <span class="form__error">at least 3 characters</span>
+        </div>
+      </div>
+
+      <div class="modal-buy-now-form-label">
+        <div class="modal-buy-now-input-name-wrap">
+          <input
+            class="personal-info__surname"
+            type="text"
+            name="surname"
+            pattern="[A-Za-z]{1,255}+\s"
+            placeholder="Surname"
+            aria-label="surname"
+            required="required"
+            title="at least 2 characters"
+            minlength="2"
+          />
+          <span class="form__error">at least 2 characters</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-buy-now-form-label">
+      <p>Email</p>
+      <div class="modal-buy-now-input-name-retreat">
+        <input
+          type="email"
+          name="email"
+          pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Enter your email"
+          aria-label="Email"
+          minlength="3"
+          maxlength="30"
+          title="please enter your email in correct format"
+          required="required"
+        />
+        <span class="form__error"
+          >This field must contain E-Mail in the format example@site.com</span
+        >
+      </div>
+    </div>
+    <div class="modal-buy-now-form-label">
+      <p>Phone number</p>
+      <div class="modal-buy-now-input-wrap">
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone number"
+          minlength="9"
+          maxlength="9"
+          pattern="[0-9]{,9}"
+          aria-label="Phone number"
+          title="Phone number must contain 9 digits"
+          required="required"
+        />
+        <span class="form__error">
+          This field must contain a phone number in international format without
+          +380</span
+        >
+
+        <svg class="svg-ua" width="24" height="24">
+          <use href="./img/icons.svg#ukraine"></use>
+        </svg>
+        <span class="ua-code">+380</span>
+      </div>
+    </div>
+    <div class="modal-buy-now-form-label">
+      <p>Card number</p>
+      <div class="modal-buy-now-input-wrap">
+        <input
+          class="myValidate"
+          type="text"
+          name="card"
+          placeholder="Enter card"
+          required
+          pattern="[0-9]{16}"
+          minlength="16"
+          maxlength="16"
+          title="Please, enter your card number"
+          aria-label="card number"
+        />
+
+        <span class="form__error">
+          This field must contain a 16-digit card number</span
+        >
+        <svg class="svg-mastercard" width="32" height="21">
+          <use href="./img/icons.svg#mastercard"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-buy-now-form-label">
+      <p>Comment</p>
+      <div class="modal-buy-now-input-wrap">
+        <textarea name="comment" placeholder="Enter text"></textarea>
+      </div>
+    </div>
+    <button
+      data-modal="2"
+      class="js-open-modal js-modal-close modal-buy-now-form-submit"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
+<script>
+  document.querySelector('.myValidate').addEventListener('keyup', function () {
+    this.value = this.value.replace(/[^\d]/g, '');
+  });
+</script>

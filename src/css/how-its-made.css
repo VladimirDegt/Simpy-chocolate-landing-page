@@ -1,0 +1,195 @@
+/* ================== mobile first ================== */
+
+.h-i-m-container {
+    min-width: 320px;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+.h-i-m-section {
+    padding-bottom: 72px;
+    background-color: var(--secondary-white-color);
+
+}
+
+.h-i-m-description {
+    background: var(--primary-white-color);
+    border-radius: 15px;
+    padding: 20px 14px;
+}
+
+.h-i-m-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+}
+
+.h-i-m-title span {
+    color: var(--contrast-color);
+}
+
+iframe {
+    border-width: 0px;
+}
+
+.h-i-m-video {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pastry-chef-preparing-chocolate-cake.jpg);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+.h-i-m-list {
+    width: 100%;
+    height: auto;
+}
+
+
+.h-i-m-list li::before {
+    content: "   ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+    margin: 5px 8px 0px 0px;
+
+}
+
+
+.h-i-m-recipe-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+
+.h-i-m-recipe-title br {
+    display: none;
+}
+
+
+.h-i-m-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.h-i-m-text:nth-last-child(-n + 1) {
+    margin-bottom: 0px;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .h-i-m-container {
+        width: 375px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+/* ================== tablet version ================== */
+
+@media screen and (min-width: 768px) {
+    .h-i-m-container {
+        width: 768px;
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
+    .h-i-m-section {
+        padding-bottom: 100px;
+    }
+
+    .h-i-m-description {
+        padding: 32px 102px 32px 32px;
+    }
+
+    .h-i-m-title {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .h-i-m-video {
+        height: 400px;
+    }
+
+
+    .h-i-m-recipe-title {
+        max-width: 350px;
+        margin-bottom: 28px;
+    }
+
+    .h-i-m-recipe-title br {
+        display: flex;
+    }
+
+
+    .h-i-m-text {
+        width: 480px;
+    }
+
+}
+
+
+
+/* ================== desktop version ================== */
+
+@media screen and (min-width: 1200px) {
+    .h-i-m-container {
+        width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .h-i-m-section {
+        padding-bottom: 128px;
+    }
+
+    .h-i-m-description {
+        width: 516px;
+        padding: 32px 59px 94px 32px;
+    }
+
+    .h-i-m-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .h-i-m-video {
+        width: 600px;
+        margin-bottom: 0px;
+    }
+
+    .h-i-m-list {
+
+        height: auto;
+    }
+
+    .h-i-m-text {
+        width: 425px;
+        margin-bottom: 24px;
+    }
+
+    .h-i-m-text:nth-child(1) {
+        display: none;
+    }
+}

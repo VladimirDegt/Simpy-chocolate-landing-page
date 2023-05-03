@@ -1,13 +1,47 @@
-<section class="subscribe-section">
-  <div class="content-wrapper">
-    <h2 class="subscribe-title">
-      explore our new chocolate first
-    </h2>
-    <p class="subscribe-descr">
-      From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
-      craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
-      that is sure to please.
+<!------------------ Marina Sihida -------------------->
+<section class="subscribe">
+  <div class="subscribe-content">
+    <h2 class="subscribe-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
     </p>
-    <button class="subscribe-button" data-modal-subscribe-open type="button">Subscribe</button>
+    <button data-modal="5" class="js-open-modal subscribe-btn" type="button">
+      Subscribe
+    </button>
   </div>
+
+  <!--------------- MODAL Subscribe ------------->
+
+  <!-- <div class="backdrop is-hidden"> -->
+    <div data-modal="5" class="modal subscribe-modal">
+      <div class="subscribe-modal-picture">
+        <button class="subscribe-btn-close  js-modal-close">
+          <svg class="subscribe-btn-close-icon">
+            <use href="/img/icons.svg#simple-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="subscribe-form">
+        <h2 class="subscribe-form-title">
+          Explore our <br />
+          <span class="subscribe-orange-txt">new chocolate</span> first!
+        </h2>
+
+        <div class="email-window">
+          <label>
+            <input
+              class="subscribe-email"
+              type="email"
+              name="subscribe-email"
+              placeholder="Enter your email"
+            />
+          </label>
+          <button class="subscribe-submit-btn js-modal-close" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
 </section>

@@ -1,102 +1,155 @@
-<header class="header">
-    <div class="container">
-        <nav class="header-navigation">
+<header class="page-header" id="#header">
+  <div class="page-header-container container">
+    <nav class="header-page-nav">
+      <a class="header-logo link" href="index.html">
+        <span class="header-span-simply">Simply</span>
+        <span class="header-span-chocolate">Chocolate</span>
+        <svg class="header-logo-icon" width="21" height="21">
+          <use href="/img/icons.svg#chocolate-logo"></use>
+        </svg>
+      </a>
+      <ul class="menu list header-menu-nav">
+        <li class="header-menu-item">
+          <a
+            class="header-menu-link header-menu-link-active link current"
+            href="#home"
+            >Home</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#how-its-made-section"
+            >How it&#8217;s made?</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#our-products-section"
+            >Our products</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#top-sellers-section"
+            >Top sellers</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#chocolate-is-loved-section"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-social-list list">
+      <li class="header-social-item">
+        <a
+          href="https://www.instagram.com/"
+          class="header-social-list-link header-dark"
+        >
+          <svg class="header-social-link-icon" width="24" height="24">
+            <use href="/img/icons.svg#insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          href="https://twitter.com/"
+          class="header-social-list-link header-dark"
+        >
+          <svg class="header-social-link-icon" width="24" height="24">
+            <use href="/img/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <!-- <button type="button" class="header-mobile-menu-open" data-menu-open> -->
+    <button
+      data-modal="11"
+      class="js-open-modal header-mobile-menu-open"
+      type="button"
+    >
+      <svg class="header-mobile-menu-open-icon" width="28" height="28">
+        <use href="/img/icons.svg#burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
 
+  <!-- <div class="header-mobile-menu" data-menu> -->
+  <div data-modal="11" class="modal header-mobile-menu">
+    <div class="container header-mobile-menu-cont">
+      <!-- <button type="button" class="header-mobile-menu-close" data-menu-close> -->
+      <button type="button" class="header-mobile-menu-close js-modal-close">
+        <svg class="header-mobile-menu-close-icon" width="28" height="28">
+          <use href="/img/icons.svg#simple-close-btn"></use>
+        </svg>
+      </button>
 
-            <a class="header-logo" href="./index.html">
-                <P class="logo-text"> <b class="logo-text-simply">SIMPLY</b> CHOCOLATE</P>
-                <svg class="heder-logo-icon">
-                    <use href="/img/icons.svg#icon-chocolate-logo-1"></use>
-                </svg>
+      <ul class="menu list mob-header-menu-nav">
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link current"
+            href="#home"
+            >Home</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#how-its-made-section"
+            >How it&#8217;s made?</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#our-products-section"
+            >Our products</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#top-sellers-section"
+            >Top sellers</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#chocolate-is-loved-section"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+
+      <div class="mob-header-mob-cont-second">
+        <ul class="mob-header-social-list list">
+          <li class="mob-header-social-item">
+            <a
+              href="https://www.instagram.com/"
+              class="mob-header-social-list-link"
+            >
+              <svg
+                class="mob-header-social-link-icon header-light"
+                width="20"
+                height="20"
+              >
+                <use href="/img/icons.svg#insta"></use>
+              </svg>
             </a>
-
-            <ul class="header-list">
-                <li class="header-item">
-                    <a class="header-link emphasis" href="#home">Home</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-link" href="#made">How it’s made?</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-link" href="#products">Our products</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-link" href="#sellers">Top sellers</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-link" href="#chocolate">Chocolate is loved</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="heder-social">
-            <li class="heder-social-item">
-                <a class="heder-social-link" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg class="heder-social-icon" width="20px" height="20px">
-                        <use href="/img/icons.svg#icon-instagram"></use>
-                    </svg></a>
-            </li>
-            <li>
-                <a class="heder-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                    <svg class="heder-social-icon" width="22px" height="18px">
-                        <use href="/img/icons.svg#icon-twitter"></use>
-                    </svg></a>
-            </li>
+          </li>
+          <li class="mob-header-social-item">
+            <a href="https://twitter.com/" class="mob-header-social-list-link">
+              <svg
+                class="mob-header-social-link-icon header-light"
+                width="20"
+                height="20"
+              >
+                <use href="/img/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-
-        <button type="button" class="burger-btn-open" data-menu-open>
-            <svg class="burger-btn-icon">
-                <use href="/img/icons.svg#icon-menu-hamburger"></use>
-            </svg>
-        </button>
+      </div>
     </div>
-    <div class=" is-menu-close mobile-menu  " data-menu>
-        <div class="container">
-            <div>
-                <button data-menu-close type="button" class="mobile-menu-cloce">
-                    <svg class="mobile-menu-close-icon">
-                        <use href="/img/icons.svg#icon-close-1"></use>
-                    </svg>
-                </button>
-                <nav>
-                    <ul class="header-list-close">
-                        <li class="header-item-close">
-                            <a class="header-link-close  " href="">Home</a>
-                        </li>
-                        <li class="header-item-close">
-                            <a class="header-link-close  " href=" ">How it’s made?</a>
-                        </li>
-                        <li class="header-item-close">
-                            <a class="header-link-close" href="">Our products</a>
-                        </li>
-                        <li class="header-item-close">
-                            <a class="header-link-close" href="">Top sellers</a>
-                        </li>
-                        <li class="header-item-close">
-                            <a class="header-link-close" href="">Chocolate is loved</a>
-                        </li>
-                    </ul>
-
-                </nav>
-                <ul class="header-social-close">
-                    <li class="heder-social-item">
-                        <a class="heder-social-link" href="https://www.instagram.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="heder-social-icon-close" width="20px" height="20px">
-                                <use href="/img/icons.svg#icon-instagram"></use>
-                            </svg></a>
-                    </li>
-                    <li>
-                        <a class="heder-social-link" href="https://twitter.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="heder-social-icon-close" width="22px" height="18px">
-                                <use href="/img/icons.svg#icon-twitter"></use>
-                            </svg></a>
-                    </li>
-                </ul>
-
-
-            </div>
-        </div>
+  </div>
 </header>
-<script src="./js/menu.js"></script>

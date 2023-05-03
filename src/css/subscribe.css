@@ -1,184 +1,322 @@
-.subscribe-section {
-  max-width: 1200px;
-  
-    padding-top: 62px;
-    padding-bottom: 62px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    background-image: linear-gradient(to right,
-        rgba(46, 47, 66, 0.2),
-        rgba(46, 47, 66, 0.2)),
-      url(/img/subscribe/subscribe-mobile.jpg);
-    background-color: var(--secondary-background-color);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  
-    color: var(--secondary-color-text);
-    text-align: center;
+.subscribe {
+  padding: 62px 20px;
+  max-width: 375px;
+  background-image: url(../img/subscribe/Subcribe1x-375.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-header {
+  margin-bottom: 24px;
+  max-width: 290px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe-text {
+  margin-bottom: 24px;
+  max-width: 326px;
+  /* margin: 0 auto; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--primary-white-color);
+}
+
+.subscribe-btn {
+  padding: 12px 28px;
+  background-color: var(--contrast-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--primary-white-color);
+  border-radius: 100px;
+  margin: 0 auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--primary-hover-color);
+  color: var(--contrast-color);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .subscribe-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.2),
-        rgba(46, 47, 66, 0.2)
-      ),
-      url(/img/subscribe/subscribe-mobile@2x.jpg);
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../img/subscribe/Subcribe2x-375.jpg);
+    /* Картинка. 2х 🙂 */
   }
 }
 
-.content-wrapper{
-  margin-left: auto;
-  margin-right: auto;
+/*----------Модальное окно и бекдроп--------*/
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(46, 47, 66, 0.4);
+} */
+
+/* .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+} */
+
+/* .backdrop.is-hidden .subscribe-modal {
+  transform: translate(-50%, -50%) scale(0.9);
+} */
+
+.subscribe-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  max-width: 311px;
+  height: 95%;
+  max-height: 350px;
+  overflow: hidden;
+  z-index: 50;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-title {
-  margin-bottom: 24px;
+.subscribe-btn-close {
+  position: absolute;
+  stroke: var(--primary-white-color);
+  display: flex;
+  top: 15px;
+  right: 14px;
+  padding: 0;
 
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-close:hover,
+.subscribe-btn-close:focus {
+  stroke: var(--contrast-color);
+}
+
+.subscribe-btn-close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe-modal-picture {
+  width: 311px;
+  height: 169px;
+  /* z-index: 1; */
+  background-image: url(../img/subscribe/subscribe-modal-1x-311.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .subscribe-modal-picture {
+    background-image: url(../img/subscribe/subscribe-modal-2x-311.jpg);
+    /* Картинка. 2х 🙂 */
+  }
+}
+
+.subscribe-form {
+  padding: 32px 24px;
+}
+
+.subscribe-form-title {
+  margin-bottom: 24px;
+  text-align: left;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 
-.subscribe-descr {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
+.subscribe-orange-txt {
+  color: var(--contrast-color);
+}
+
+.subscribe-email {
+  width: 263px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
 }
 
-.subscribe-button {
-  padding: 12px 28px;
+.email-window {
+  position: relative;
+}
 
-  border: none;
+.subscribe-submit-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* margin: 0; */
+  padding: 14px 28px;
+  background: var(--contrast-color);
   border-radius: 100px;
-
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--primary-white-color);
 
-  color: var(--secondary-color-text);
-  background-color: var(--active-color);
-
-  transition: background-color var(--animation-time) var(--animation-function),
-    color var(--animation-time) var(--animation-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  color: var(--active-color);
-  background-color: var(--hovered-button-bg);
+.subscribe-submit-btn:hover,
+.subscribe-submit-btn:focus {
+  background-color: var(--primary-hover-color);
+  color: var(--contrast-color);
 }
 
-@media screen and (min-width: 375px) {
-  .subscribe-title {
-    margin-left: auto;
-    margin-right: auto;
-    width: 291px;
-  }
-  .content-wrapper {
-    width: 326px;
-  }
-}
+/* ----------------------------- TABLET ------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .subscribe-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.2),
-        rgba(46, 47, 66, 0.2)
-      ),
-      url(/img/subscribe/subscribe-tablet.jpg);
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .subscribe-section {
-      background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.2),
-          rgba(46, 47, 66, 0.2)
-        ),
-        url(/img/subscribe/subscribe-tablet@2x.jpg);
-    }
-  }
-  .content-wrapper {
-    width: 467px;
-  }
-  .subscribe-title {
-    width: 378px;
-
-    font-size: 24px;
-    line-height: 1.17;
-  }
-  .subscribe-descr {
-    letter-spacing: -0.02em;
-  }
-
-  .subscribe-button {
-    padding: 14px 40px;
-
-      font-size: 18px;
-      line-height: 1.2;
-  }
-  
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    background-image: linear-gradient(to right,
-        rgba(46, 47, 66, 0.2),
-        rgba(46, 47, 66, 0.2)),
-      url(/img/subscribe/subscribe-desktop.jpg);
+  .subscribe {
+    padding: 72px 150px;
+    max-width: 768px;
+    background-image: url(../img/subscribe/Subcribe1x-768.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-    .subscribe-section {
-      background-image: linear-gradient(to right,
-          rgba(46, 47, 66, 0.2),
-          rgba(46, 47, 66, 0.2)),
-        url(/img/subscribe/subscribe-desktop@2x.jpg);
+    .subscribe {
+      background-image: url(../img/subscribe/Subcribe2x-768.jpg);
+      /* Картинка. 2х 🙂 */
     }
   }
 
-  .content-wrapper {
-    width: 467px;
-  }
-
-  .subscribe-title {
+  .subscribe-header {
     width: 378px;
-
     font-size: 24px;
-    line-height: 1.17;
+    line-height: 1.166;
   }
 
-  .subscribe-descr {
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+  .subscribe-text {
+    max-width: 467px;
   }
 
-  .subscribe-button {
+  .subscribe-btn {
     padding: 14px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .subscribe-modal {
+    max-width: 538px;
+    max-height: 412px;
+  }
+
+  .subscribe-btn-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .subscribe-btn-close-icon {
+    width: 28px;
+    height: 28px;
+
+  }
+
+  .subscribe-modal-picture {
+    width: 538px;
+    height: 196px;
+    background-image: url(../img/subscribe/subscribe-modal-1x-538.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .subscribe-modal-picture {
+      background-image: url(../img/subscribe/subscribe-modal-2x-538.jpg);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .subscribe-form {
+    max-height: 216px;
+    padding: 40px;
+  }
+
+  .subscribe-form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1667;
+    margin-bottom: 28px;
+  }
+
+  .subscribe-email {
+    width: 313px;
+    padding: 14px 24px;
+    font-size: 18px;
+    line-height: 1.222;
+  }
+
+  .subscribe-submit-btn {
+    padding: 16px 42px;
+  }
+}
+
+/* --------------------- DESKTOP ------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 72px 366px;
+    max-width: 1200px;
+    background-image: url(../img/subscribe/Subcribe1x-1200.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/subscribe/Subcribe2x-1200.jpg);
+      /* Картинка. 2х 🙂 */
+    }
   }
 }

@@ -1,0 +1,123 @@
+.section-advantages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 792px;
+  padding: 20px;
+  background-color: var(--dark-background-color);
+}
+
+.advantages-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.advantages-cont {
+  width: 62px;
+  height: 62px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+
+.advantages-svg {
+}
+
+.advantages-header {
+  width: 173px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-white-color);
+  margin-bottom: 18px;
+}
+
+.advantages-par {
+  width: 308px;
+  height: 102px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+
+  color: var(--dark-white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-advantages {
+    min-height: 620px;
+    padding: 32px 50px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section-advantages {
+    min-height: 344px;
+    padding: 50px;
+  }
+
+  .advantages-list {
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .advantages-item {
+    width: 1100px;
+    position: relative;
+    width: 1100px;
+  }
+
+  .advantages-item + .advantages-item::after {
+    content: ' ';
+    width: 124px;
+    height: 0px;
+
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: -120px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+  }
+}

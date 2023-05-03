@@ -1,0 +1,369 @@
+.unique-components {
+    background-color: var(--secondary-white-color);
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.unique-title {
+    max-width: 283px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.unique-title-orange {
+    color: var(--contrast-color);
+}
+
+.unique-after-title {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+
+
+.unique-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.unique-list-item:nth-child(2n + 2) {
+    background-color: var(--primary-white-color);
+}
+
+.unique-list-item:nth-last-child(2) {
+    background-color: var(--dark-background-color);
+}
+
+.unique-list-item {
+    width: 335px;
+    height: 100%;
+    border: 1px solid var(--contrast-color);
+    border-radius: 15px;
+
+}
+
+.item__bcg-1 {
+    background-color: var(--contrast-color);
+}
+
+.item__bcg-2 {
+    border-color: var(--contrast-color);
+}
+
+.item__bcg-3 {
+    background-color: var(--dark-background-color);
+    border: none;
+}
+
+.item__bcg-4 {
+    border-color: var(--contrast-color);
+
+}
+
+
+.unique-list-img {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 25px;
+}
+
+
+.unique-after-wraper {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding-left: 28px;
+    padding-bottom: 28px;
+    color: var(--primary-white-color);
+}
+
+
+
+.second-color {
+    color: var(--primary-text-color);
+}
+
+
+/* !!!!!!!!!!!!!!!!!!                 FLIP-CARD        !!!!!!!!!!!!!!!!!!!!! */
+.flip-card-container {
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+.flip-card-container:hover>.card-inner {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    position: relative;
+    width: 335px;
+    height: 270px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    perspective: 700px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 335px;
+    height: 270px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: var(--primary-white-color);
+    transform: rotateY(180deg);
+}
+
+.flip-card-wrapper {
+    margin: 28px;
+
+
+}
+
+.flip-card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.flip-card-btn {
+    display: flex;
+    gap: 6px;
+
+}
+
+.flip-btn-main {
+    border-radius: 35px;
+    padding: 6px 16px;
+    background-color: var(--contrast-color);
+    color: var(--primary-white-color);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    text-align: center;
+
+}
+
+
+
+.flip-btn-second {
+    background-color: #FAFAFA;
+    border: 1px solid var(--contrast-color);
+    border-radius: 35px;
+    padding: 6px 16px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    text-align: center;
+
+}
+
+
+
+
+.flip-card-after-title {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 9;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!      MOBILE 320       !!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (max-width: 374.99px) {
+
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
+    }
+
+    .card-inner {
+        width: 100%;
+    }
+
+    .unique-list-item {
+        width: 100%;
+    }
+
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!            TABLET        !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+
+    .flip-card-container {
+        margin-bottom: 0;
+    }
+
+    .unique-components {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .unique-title {
+
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 28px;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .unique-after-title {
+        max-width: 486px;
+        margin: 0 auto;
+
+    }
+
+    .after-title-wrapper {
+        margin-top: 28px;
+        margin-bottom: 50px;
+    }
+
+    .unique-list .unique-list-item {
+        margin-bottom: 0;
+
+    }
+
+    .unique-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px 32px;
+    }
+
+    .item-1 {
+
+        order: 1;
+    }
+
+    .item-2 {
+        order: 3;
+    }
+
+    .item-3 {
+        order: 4;
+    }
+
+    .item-4 {
+        order: 2;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .unique-title {
+        max-width: 486px;
+        margin: 0 auto 28px auto;
+
+    }
+
+    .unique-after-title {
+        width: 486px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .unique-components {
+        padding-top: 128px;
+        padding-bottom: 132px;
+    }
+
+    .unique-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+
+    .flip-card-container {
+        margin-bottom: 0;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        width: 270px;
+    }
+
+    .item__bcg-1 {
+        width: 270px;
+    }
+
+    .item__bcg-2 {
+        width: 270px;
+        border-color: var(--contrast-color);
+    }
+
+    .item__bcg-3 {
+        width: 270px;
+    }
+
+    .item__bcg-4 {
+        width: 270px;
+        border-color: var(--contrast-color);
+    }
+
+    .card-inner {
+        width: 270px;
+    }
+
+    .unique-list {
+        gap: 19px;
+    }
+
+    .item-3 {
+        order: 2;
+    }
+
+    .item-4 {
+        order: 3;
+    }
+
+    .item-2 {
+        order: 1;
+    }
+
+}

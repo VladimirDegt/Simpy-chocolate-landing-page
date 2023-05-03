@@ -1,0 +1,70 @@
+<div data-modal="3" class="modal modal-leave-review-container">
+  <div class="modal-leave-review-wraper">
+    <form class="modal-leave-review">
+      <button
+        type="button"
+        data-modal-close
+        class="modal-leave-review-close-btn js-modal-close"
+      >
+        <svg class="modal-leave-review-close-icon">
+          <use href="/img/icons.svg#simple-close-btn"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-leave-review-header">
+        LEAVE A REVIEW <br />
+        ABOUT <span>OUR CHOCOLATE</span>
+      </h2>
+      <label class="modal-leave-review-field">
+        <span class="modal-name">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-leave-review-input"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="3"
+          />
+        </span>
+      </label>
+
+      <label class="modal-leave-review-field">
+        <span class="modal-email">
+          <input
+            type="email"
+            name="user_email"
+            class="modal-leave-review-input"
+            placeholder="Email"
+          />
+        </span>
+      </label>
+      <label class="modal-leave-review-field modal-leave-review-field-svg">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-leave-review-input modal-leave-review-input-phone"
+          placeholder="Phone number"
+        />
+        <svg class="modal-leave-review-icon" width="24" height="18">
+          <use href="/img/icons.svg#ukraine"></use>
+        </svg>
+        <span class="modal-leave-review-phone-code">+380</span>
+      </label>
+      <label class="modal-leave-review-field modal-leave-review-comment">
+        <textarea
+          name="user_message"
+          class="modal-leave-review-input modal-leave-review-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        class="js-open-modal modal-leave-review-btn js-modal-close"
+        data-modal="4"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>

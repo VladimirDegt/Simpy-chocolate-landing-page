@@ -1,29 +1,65 @@
-<section class="hero">
-  <div class="container">
-    <!-- Прихований заголовок -->
-    <h2 class="hero-hidden">HERO</h2>
-    <h1 id="home" class="hero-title">
-      Treat yourself or a loved one <br class="br" />
-      to <br class="brt" />our finest ingredients for a moment of pure delight!
-    </h1>
+<section class="container" id="#home">
+  <div class="hero__bcg">
+    <h1 class="visuality-hidden">Great chocolate</h1>
+    <h2 class="hero__text">
+      <span class="hero__firstword">Treat </span>yourself or a loved one to<br />
+      our finest ingredients for a moment of pure delight!
+    </h2>
 
-    <div class="hero-btn">
-      <div class="hero-btn-two">
-        <button data-modal-bn-open class="hero-btn-buynow" type="button">
-          Buy now
-        </button>
-        <button type="button" class="hero-btn-how">How it’s made</button>
-      </div>
-      <a class="hero-btn-scroll" href="#futer">
-      <button type="button" class="hero-btn-scroll">
-        scroll down
-        <div class="hero-btn-down">
-          <svg class="hero-btn-icon">
-            <use href="/img/icons.svg#icon-hero-scroll-1"></use>
-          </svg>
-        </a>
-        </div>
+    <div class="hero__buttons">
+      <button class="hero__button js-open-modal" data-modal="1" type="button">
+        Buy now
       </button>
+
+      <a class="hero__anchor" href="#how-its-made-section">How it’s made</a>
+
+      <a class="hero__link" href="#footer">
+        scroll down
+
+        <svg class="hero__scroll-icon" width="28" height="16">
+          <use
+            href="/img/icons.svg#scroll-btn"
+            width="28"
+            height="16"
+          ></use></svg
+      ></a>
     </div>
   </div>
+
+  <!-- ====POPUP BUY NOW THANK YOU======= -->
+
+  <div data-modal="2" class="popup-thanks modal">
+    <button type="button" class="popup-close-btn">
+      <svg class="popup-close-icon js-modal-close">
+        <use href="/img/icons.svg#simple-close-btn"></use>
+      </svg>
+    </button>
+    <p class="popup-thanks-title">thank you!</p>
+    <p class="popup-thanks-text">
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+  </div>
+  <!-- /====POPUP BUY NOW THANK YOU====== -->
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a[href*='#']").on('click', function (e) {
+      // Reset hover and focus styles
+      $(this).blur();
+
+      var anchor = $(this);
+      $('html, body')
+        .stop()
+        .animate(
+          {
+            scrollTop: $(anchor.attr('href')).offset().top,
+          },
+          777
+        );
+      e.preventDefault();
+      return false;
+    });
+  });
+</script>
