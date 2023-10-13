@@ -1,31 +1,21 @@
+# Командний проєкт
 <h1 id="title">Landing page "SIMPLY CHOCOLATE"</h1>
 
-## Introduction:
+Метою роботи команди було створення landing page application про 
+шоколад власного виробництва
 
-Indulge in the sweet world of chocolate! Our project aims to create an enticing
-landing page for a premium chocolate production company that is dedicated to
-crafting exquisite and delectable chocolate creations. This landing page serves
-as the gateway to a cocoa-infused wonderland, where visitors can explore the
-artistry and passion behind our chocolate-making process.
+## Моя участь у роботі команди
 
-## Key Features:
+На цьому проєкті я виконував роль тімліда.
+Організація, дзвінки, міти, ревью ... ну ви розумієте )
+Так, це було дісно незабутньо.
 
-1. Decadent Visuals: The landing page is adorned with sumptuous imagery of
-   chocolate delights, showcasing the mouthwatering variety of products on
-   offer. High-resolution photographs highlight the intricate details of each
-   chocolate creation, leaving visitors eager to taste the craftsmanship
-   firsthand.
-2. Artisanal Craftsmanship: The page communicates the dedication and passion of
-   our chocolatiers. Engaging content describes the meticulous steps taken to
-   source the finest cocoa beans and ingredients, as well as the artistry
-   involved in turning them into exquisite chocolate treats.
-3. Product Showcase: A carefully curated section features the diverse range of
-   chocolate products we offer. Each product is presented with an elegant
-   description, emphasizing the unique flavors and craftsmanship that set them
-   apart.
-4. Customer Reviews: Authentic and heartfelt testimonials from satisfied
-   customers add a personal touch, establishing trust and credibility in the
-   quality of our chocolates.
+## Команда
+
+Хочу висловити щиру подяку кожному хто приймав участь у проєкті.
+Вклад та зусилля кожного були надзвичайно цінними і внесли вагому допомогу у досягненні наших цілей.
+Професіоналізм, творчість і відданість завданню надихають нас на подальший розвиток і досягнення нових висот.
+Дякую за вашу здібність працювати разом як єдина команда та за вашу відданість нашому спільному проєкту. Без вас це було б неможливо.
 
 ## Frontend:
 
