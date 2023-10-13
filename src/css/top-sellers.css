@@ -374,17 +374,6 @@ input:invalid:not(:placeholder-shown)+.form__error {
   display: none;
 }
 
-
-
-/* .backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .subscribe-modal {
-  transform: translate(-50%, -50%) scale(0.9);
-} */
-
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     width: 609px;
